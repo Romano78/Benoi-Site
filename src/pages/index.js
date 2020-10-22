@@ -1,5 +1,11 @@
 import React from "react"
+import IndexLayout from "../components/Pages/index"
+// import propTypes from "prop-types"
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Index = () => {
+  return <IndexLayout />
 }
+
+// Index.propTypes = {}
+
+export default Index
