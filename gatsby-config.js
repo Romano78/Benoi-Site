@@ -20,6 +20,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-source-prismic",
       options: {
         repositoryName: "bruno-site",
@@ -30,7 +41,14 @@ module.exports = {
         // PrismJS highlighting for labels and slices
         // htmlSerializer: () => prismicHtmlSerializer,
         schemas: {
-          test: require("./src/schemas/test.json"),
+          homepage: require("./src/schemas/homepage.json"),
+          menu: require("./src/schemas/menu.json"),
+          page_1: require("./src/schemas/page_1.json"),
+          page_2: require("./src/schemas/page_2.json"),
+          page_3: require("./src/schemas/page_3.json"),
+          page_4: require("./src/schemas/page_4.json"),
+          page_5: require("./src/schemas/page_5.json"),
+          page_6: require("./src/schemas/page_6.json"),
         },
       },
     },
