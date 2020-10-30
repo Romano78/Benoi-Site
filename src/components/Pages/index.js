@@ -5,6 +5,7 @@ import { WidthLimiterContainer } from "../Layout/styles"
 
 import Presentation from "../../components/Sections/Presentation"
 import Projet from "../../components/Sections/Projet"
+import About from "../../components/Sections/About"
 
 const IndexLayout = ({
   data: {
@@ -28,7 +29,7 @@ const IndexLayout = ({
   const groupLinksSectionP13 = query?.group_links[13]?.page_link.document?.data
   const groupLinksSectionP14 = query?.group_links[14]?.page_link.document?.data
   const groupLinksSectionP15 = query?.group_links[15]?.page_link.document?.data
-  // const groupLinksSectionP16 = query?.group_links[16]?.page_link.document?.data
+  const groupLinksSectionP16 = query?.group_links[16]?.page_link.document?.data
 
   const [menuItems, setMenuItems] = useState([])
 
@@ -91,6 +92,18 @@ const IndexLayout = ({
               page16: groupLinksSectionP15,
             }}
           />
+        ) : (
+          ""
+        )}
+
+        {currentLink === menuItems[2] ? (
+          <About
+            query={{
+              page17: groupLinksSectionP16,
+            }}
+          >
+            hello
+          </About>
         ) : (
           ""
         )}
