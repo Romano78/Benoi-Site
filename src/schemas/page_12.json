@@ -1,0 +1,103 @@
+{
+  "Main": {
+    "contenu": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "contenu"
+      }
+    },
+    "salaire_brut": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_brut"
+      }
+    },
+    "salaire_brut_number": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_brut_number"
+      }
+    },
+    "salaire_net": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_net"
+      }
+    },
+    "salaire_net_apres": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_net_après"
+      }
+    },
+    "salaire_net_number": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_net_number"
+      }
+    },
+    "calcule": {
+      "type": "Text",
+      "config": {
+        "label": "calcule"
+      }
+    },
+    "salaire_net_semaines": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_net_semaines"
+      }
+    },
+    "salaire_semaines_number": {
+      "type": "Text",
+      "config": {
+        "label": "salaire_semaines_number"
+      }
+    },
+    "don": {
+      "type": "Text",
+      "config": {
+        "label": "don"
+      }
+    },
+    "don_number": {
+      "type": "Text",
+      "config": {
+        "label": "don_number"
+      }
+    },
+    "retour_impots": {
+      "type": "Text",
+      "config": {
+        "label": "retour_impôts"
+      }
+    },
+    "retour_impot_number": {
+      "type": "Text",
+      "config": {
+        "label": "retour_impôts_number"
+      }
+    },
+    "veritable_cout": {
+      "type": "Text",
+      "config": {
+        "label": "veritable_coût"
+      }
+    },
+    "veritable_cout_number": {
+      "type": "Text",
+      "config": {
+        "label": "veritable_coût_number"
+      }
+    },
+    "graph": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "graph"
+      }
+    }
+  }
+}
