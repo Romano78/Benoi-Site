@@ -1,0 +1,24 @@
+{
+  "Main": {
+    "text_1": {
+      "type": "Text",
+      "config": {
+        "label": "text_1",
+        "placeholder": "Les 3 option dans le menu"
+      }
+    },
+    "text_2": {
+      "type": "Text",
+      "config": {
+        "label": "text_2"
+      }
+    },
+    "text_3": {
+      "type": "Text",
+      "config": {
+        "label": "text_3",
+        "placeholder": "Les 3 option dans le menu"
+      }
+    }
+  }
+}

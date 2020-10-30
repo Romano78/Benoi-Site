@@ -41,14 +41,15 @@ export const theme = {
   },
   fonts: {
     heading1: "64px",
-    heading2: "40px",
+    heading2: "90px",
     heading3: "32px",
     heading4: "30px",
     heading5: "24px",
     heading6: "18px",
-    body: "24pxx",
-    bigText: "32px",
-    smallText: "12px",
+    largeTextFont: "80px",
+    body: "24px",
+    bigText: "37px",
+    smallText: "30px",
     mediumText: "28px",
   },
   letterSpacing: {
@@ -91,6 +92,7 @@ export const GlobalStyle = props => (
         background-color: #ffffff;
         scroll-behavior: smooth;
         overflow: visible;
+        font-family: "Roboto";
       }
       html {
         -webkit-font-smoothing: antialiased;

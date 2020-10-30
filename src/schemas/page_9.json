@@ -1,0 +1,52 @@
+{
+  "Main": {
+    "contenu": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "Contenu",
+        "placeholder": "Contenu"
+      }
+    },
+    "graphic": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "graphic"
+      }
+    },
+    "titre": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Titre",
+        "placeholder": "EX: Moyenne des dons"
+      }
+    },
+    "pay": {
+      "type": "Text",
+      "config": {
+        "label": "Pay"
+      }
+    },
+    "ville": {
+      "type": "Text",
+      "config": {
+        "label": "ville"
+      }
+    },
+    "revenu_quebec": {
+      "type": "Number",
+      "config": {
+        "label": "Revenu_quebec"
+      }
+    },
+    "revenue_canada": {
+      "type": "Number",
+      "config": {
+        "label": "revenue_canada"
+      }
+    }
+  }
+}

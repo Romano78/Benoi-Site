@@ -1,0 +1,34 @@
+{
+  "Main": {
+    "information": {
+      "type": "Text",
+      "config": {
+        "label": "information",
+        "placeholder": "information"
+      }
+    },
+    "graph": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "graph"
+      }
+    },
+    "option": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "point": {
+            "type": "Text",
+            "config": {
+              "label": "point",
+              "placeholder": "Chaque points"
+            }
+          }
+        },
+        "label": "option"
+      }
+    }
+  }
+}

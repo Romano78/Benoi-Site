@@ -1,0 +1,107 @@
+{
+  "Main": {
+    "contenu": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "contenu"
+      }
+    },
+    "taux_horaire": {
+      "type": "Text",
+      "config": {
+        "label": "Taux_Horaire"
+      }
+    },
+    "semaines_heures": {
+      "type": "Text",
+      "config": {
+        "label": "semaines_heures"
+      }
+    },
+    "semaine_heures_number": {
+      "type": "Text",
+      "config": {
+        "label": "semaine_heures_number"
+      }
+    },
+    "taux_horaire_number": {
+      "type": "Text",
+      "config": {
+        "label": "Taux_horaire_number"
+      }
+    },
+    "revenus_compagnie": {
+      "type": "Text",
+      "config": {
+        "label": "revenus_compagnie"
+      }
+    },
+    "revenus_compagnie_number": {
+      "type": "Text",
+      "config": {
+        "label": "revenus_compagnie_number"
+      }
+    },
+    "don": {
+      "type": "Text",
+      "config": {
+        "label": "Don"
+      }
+    },
+    "don_number": {
+      "type": "Text",
+      "config": {
+        "label": "Don Number"
+      }
+    },
+    "retour_impots": {
+      "type": "Text",
+      "config": {
+        "label": "retour_impôts"
+      }
+    },
+    "retour_impot_info": {
+      "type": "Text",
+      "config": {
+        "label": "retour_impot_info"
+      }
+    },
+    "retour_impots_number": {
+      "type": "Text",
+      "config": {
+        "label": "retour_impots_number"
+      }
+    },
+    "imposition_remuneration": {
+      "type": "Text",
+      "config": {
+        "label": "imposition_remuneration"
+      }
+    },
+    "imposition_remuneration_info": {
+      "type": "Text",
+      "config": {
+        "label": "imposition_remuneration_info"
+      }
+    },
+    "imposition_remuneration_number": {
+      "type": "Text",
+      "config": {
+        "label": "imposition_remuneration_number"
+      }
+    },
+    "veritable_cout_don": {
+      "type": "Text",
+      "config": {
+        "label": "veritable_cout_don"
+      }
+    },
+    "veritable_cout_number": {
+      "type": "Text",
+      "config": {
+        "label": "veritable_cout_number"
+      }
+    }
+  }
+}

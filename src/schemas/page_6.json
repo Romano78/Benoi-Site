@@ -1,0 +1,67 @@
+{
+  "Main": {
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "text",
+        "placeholder": "Question"
+      }
+    },
+    "pay": {
+      "type": "Text",
+      "config": {
+        "label": "pay",
+        "placeholder": "EX: Canada"
+      }
+    },
+    "ville": {
+      "type": "Text",
+      "config": {
+        "label": "ville",
+        "placeholder": "Ex: Québec"
+      }
+    },
+    "chiffre_1": {
+      "type": "Number",
+      "config": {
+        "label": "chiffre 1"
+      }
+    },
+    "chiffre_description": {
+      "type": "Text",
+      "config": {
+        "label": "chiffre_description"
+      }
+    },
+    "chiffre_2": {
+      "type": "Number",
+      "config": {
+        "label": "chiffre 2"
+      }
+    },
+    "liens": {
+      "type": "Text",
+      "config": {
+        "label": "liens",
+        "placeholder": "Ex: https://ici.radio-canada.ca/nouvelle/1071811/dons-chrite-bienfaisance-generosite-canadiens-quebecois"
+      }
+    },
+    "grand_graph": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "grand_graph"
+      }
+    },
+    "petit_graph": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "petit_graph"
+      }
+    }
+  }
+}

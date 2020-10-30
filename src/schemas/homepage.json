@@ -1,0 +1,43 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "home"
+      }
+    },
+    "site_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "site Title",
+        "placeholder": "this is the site's tites"
+      }
+    },
+    "menu": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["menu"],
+        "label": "menu",
+        "placeholder": "This is to link the menu"
+      }
+    },
+    "group_links": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "page_link": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "label": "page link",
+              "placeholder": "To link each page"
+            }
+          }
+        },
+        "label": "group links"
+      }
+    }
+  }
+}

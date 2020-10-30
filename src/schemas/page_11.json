@@ -1,0 +1,63 @@
+{
+  "Main": {
+    "points": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "point": {
+            "type": "Text",
+            "config": {
+              "label": "point",
+              "placeholder": "Ex: Prolonger la période de travail de quelques semaines"
+            }
+          }
+        },
+        "label": "points"
+      }
+    },
+    "graph_1": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 227,
+          "height": 260
+        },
+        "thumbnails": [],
+        "label": "graph_1"
+      }
+    },
+    "graph_2": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 227,
+          "height": 260
+        },
+        "thumbnails": [],
+        "label": "graph_2"
+      }
+    },
+    "graph_3": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 227,
+          "height": 260
+        },
+        "thumbnails": [],
+        "label": "graph_3"
+      }
+    },
+    "graph_4": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 227,
+          "height": 260
+        },
+        "thumbnails": [],
+        "label": "graph_4"
+      }
+    }
+  }
+}
