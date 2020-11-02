@@ -102,6 +102,14 @@
       "config": {
         "label": "veritable_cout_number"
       }
+    },
+    "graph": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "graph"
+      }
     }
   }
 }

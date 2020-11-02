@@ -6,7 +6,7 @@ import {
   SecondSliderBodyText,
   PetitGraphContainer,
   PetitGraphContentPetit,
-  PetitGraphContent,
+  GrandGraphContent,
 } from "./styles"
 
 import Text from "../../../../Utilities/Text"
@@ -23,32 +23,35 @@ const Slider2 = ({ querySection3P2 }) => {
         <SecondSliderBodyText>
           <PetitGraphContainer>
             <PetitGraphContentPetit>
-              <div style={{ paddingRight: "100px" }}>
+              <div className="petit-cochon">
                 <Text type="smallText800" className="city-Quebec">
                   Québec
                 </Text>
                 <p className="Price-Québec">130$</p>
+                <p className="chiffre-description">
+                  {querySection3P2.chiffre_description}
+                </p>
+                <img
+                  src={querySection3P2.petit_graph.localFile.url}
+                  alt=""
+                  className="Objectif__Petit-Graph"
+                />
               </div>
-              <img
-                src={querySection3P2.petit_graph.localFile.url}
-                alt=""
-                className="Objectif__Petit-Graph"
-              />
             </PetitGraphContentPetit>
           </PetitGraphContainer>
-          <PetitGraphContent>
-            <div>
+          <GrandGraphContent>
+            <div className="grand-cochon">
               <Text type="smallText800" className="city-Canada">
                 Canada
               </Text>
               <p className="Price-Canada">300$</p>
+              <img
+                src={querySection3P2.grand_graph.localFile.url}
+                alt=""
+                className="Objectif__Grand-Graph"
+              />
             </div>
-            <img
-              src={querySection3P2.grand_graph.localFile.url}
-              alt=""
-              className="Objectif__Grand-Graph"
-            />
-          </PetitGraphContent>
+          </GrandGraphContent>
         </SecondSliderBodyText>
       </SecondSliderContent>
     </SecondSliderContainer>

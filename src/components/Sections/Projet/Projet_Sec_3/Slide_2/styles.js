@@ -21,6 +21,7 @@ export const SecondSliderContent = styled.div`
 export const SecondSliderBodyText = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     display: flex;
+    justify-content: space-between;
   }
 `
 export const SecondSliderImg = styled.div`
@@ -29,42 +30,89 @@ export const SecondSliderImg = styled.div`
   }
 `
 
-export const PetitGraphContainer = styled.div`
-  display: flex;
-`
+export const PetitGraphContainer = styled.div``
 
-export const PetitGraphContent = styled.div`
-  display: flex;
-  align-items: center;
-  position: absolute;
-  right: 59px;
-  top: 72px;
+export const GrandGraphContent = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 50%;
+    position: relative;
+    .grand-cochon {
+      position: absolute;
+      bottom: 33px;
+      img {
+        width: 86%;
+      }
 
-  .city-Canada {
-    position: absolute;
-    right: 20px;
-    top: 100px;
-  }
+      .city-Canada {
+        position: absolute;
+        bottom: 160px;
+        font-size: 30px;
+        left: -130px;
+        z-index: 1;
 
-  .Price-Canada {
-    position: absolute;
-    top: 110px;
-    font-size: 50px;
-    color: white;
-    left: 10px;
-  }
+        &::after {
+          content: "";
+          width: 100%;
+          background-color: white;
+          height: 20px;
+          position: absolute;
+          right: 0;
+          top: 20px;
+          z-index: -1;
+        }
+      }
 
-  img {
-    width: 75%;
+      .Price-Canada {
+        position: absolute;
+        bottom: 75px;
+        left: 48px;
+        font-size: 50px;
+        color: white;
+      }
+    }
   }
 `
 export const PetitGraphContentPetit = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 110px;
-
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
   img {
-    width: 54%;
+    width: 100%;
+  }
+
+  .Price-Québec {
+    position: absolute;
+    font-size: 60px;
+    bottom: 100px;
+    left: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .chiffre-description {
+    position: absolute;
+    bottom: 30px;
+    right: -160px;
+    font-size: 25px;
+    width: 60%;
+  }
+
+  .city-Quebec {
+    position: absolute;
+    left: -150px;
+    font-size: 30px;
+    bottom: 190px;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      width: 100%;
+      background-color: white;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      z-index: -1;
+    }
   }
 `

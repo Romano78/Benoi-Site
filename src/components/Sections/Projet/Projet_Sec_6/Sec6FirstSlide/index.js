@@ -1,35 +1,49 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Text from "~/components/Utilities/Text"
+import Title from "~/components/Utilities/Title"
+import Icon from "~/components/Icon"
+import Fade from "react-reveal/Fade"
 import {
   Sec6FirstSlideContainer,
   Sec6FirstLeftSlide,
   Sec6FirstRightSlide,
+  Sec6FirstLeftTitle,
+  Sec6FirstLeftImg,
+  Sec6FirstRightText,
 } from "./styles"
 
 const Sec6FirstSlide = ({ query }) => {
-  console.log("SecFirstSlide", query)
-
   return (
-    <Sec6FirstSlideContainer>
-      <Sec6FirstLeftSlide>
-        <h1>{query.information}</h1>
-        <img src={query.graph.localFile.url} alt="" />
-      </Sec6FirstLeftSlide>
-      <Sec6FirstRightSlide>
-        {query.listes.map((info, index) => {
-          return (
-            <div key={index}>
-              <Text
-                dangerouslySetInnerHTML={{ __html: info.choix.html }}
-                className="Sec6-First__Slide__Content"
-                type="largeText"
-              />
-            </div>
-          )
-        })}
-      </Sec6FirstRightSlide>
-    </Sec6FirstSlideContainer>
+    <Fade bottom distance="30px">
+      <Sec6FirstSlideContainer>
+        <Sec6FirstLeftSlide>
+          <Sec6FirstLeftTitle>
+            <Title type="heading2" as="h2">
+              {query.information}
+            </Title>
+          </Sec6FirstLeftTitle>
+
+          <Sec6FirstLeftImg>
+            <img src={query.graph.localFile.url} alt="" />
+          </Sec6FirstLeftImg>
+        </Sec6FirstLeftSlide>
+        <Sec6FirstRightSlide>
+          {query.listes.map((info, index) => {
+            return (
+              <Sec6FirstRightText key={index}>
+                <Icon type="option" />
+                <Text
+                  dangerouslySetInnerHTML={{ __html: info.choix.html }}
+                  className="Sec6-First__Slide__Content"
+                  type="body"
+                />
+              </Sec6FirstRightText>
+            )
+          })}
+        </Sec6FirstRightSlide>
+      </Sec6FirstSlideContainer>
+    </Fade>
   )
 }
 

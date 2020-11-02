@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { HomePageContainer, HomeMenuLinks } from "./styles"
 import { WidthLimiterContainer } from "../Layout/styles"
+import Title from "../Utilities/Title"
+import Text from "../Utilities/Text"
 
 import Presentation from "../../components/Sections/Presentation"
 import Projet from "../../components/Sections/Projet"
@@ -48,13 +50,19 @@ const IndexLayout = ({
     <WidthLimiterContainer>
       <HomePageContainer>
         <div className="test-nav">
-          <h1 className="Header__Title">{query.site_title.text}</h1>
+          <Title as="h1" type="heading1" className="Header__Title">
+            {query.site_title.text}
+          </Title>
           <HomeMenuLinks>
             {menuItems.length > 0
               ? menuItems.map((item, index) => {
                   return (
                     <HomeMenuLinks key={index}>
-                      <p onClick={onClickHandler}>{item}</p>
+                      <div onClick={onClickHandler}>
+                        <Text type="smallText400" className="Header__Title">
+                          {item}
+                        </Text>
+                      </div>
                     </HomeMenuLinks>
                   )
                 })

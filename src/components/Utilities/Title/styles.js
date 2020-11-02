@@ -3,33 +3,31 @@ import { theme } from "~/utils/styles"
 
 export const TitleStyled = styled.p`
   &.heading1 {
-    font-size: ${theme.fonts.heading1};
+    font-size: ${theme.fonts.heading4};
     font-weight: normal;
-    font-family: ${theme.fontFamily.primary};
     font-style: normal;
     line-height: 1.3;
-    font-weight: bold;
 
     @media (min-width: ${props => props.theme.breakpoints.lg}) {
-      font-size: ${props => props.theme.fonts.heading2};
+      font-size: ${props => props.theme.fonts.heading1};
     }
   }
   &.heading2 {
-    font-size: ${theme.fonts.heading3};
+    font-size: ${theme.fonts.heading6};
     font-family: ${theme.fontFamily.primary};
-    font-weight: lighter;
     font-style: normal;
     line-height: normal;
+    font-weight: normal;
     @media (min-width: ${theme.breakpoints.md}) {
-      font-size: 90px;
+      font-size: ${props => props.theme.fonts.heading2};
     }
   }
   &.heading3 {
     font-family: ${theme.fontFamily.primary};
     font-size: ${theme.fonts.heading6};
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-    line-height: 1.3;
+    line-height: normal;
 
     @media (min-width: ${theme.breakpoints.md}) {
       font-size: ${theme.fonts.heading3};
@@ -49,7 +47,7 @@ export const TitleStyled = styled.p`
   }
   &.heading5 {
     font-family: ${theme.fontFamily.primary};
-    font-size: ${theme.fonts.heading7};
+    font-size: ${theme.fonts.heading5};
     line-height: 1.3;
     font-weight: normal;
     font-style: normal;
@@ -123,7 +121,7 @@ export const TitleStyled = styled.p`
     font-style: normal;
     color: ${theme.colors.secondary};
     @media (min-width: ${theme.breakpoints.md}) {
-      font-size: ${theme.fonts.heading3};
+      font-size: ${theme.fonts.heading5};
       line-height: 1, 3;
     }
   }

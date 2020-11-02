@@ -1,13 +1,33 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { AboutSectionContainer } from "./styles"
+import {
+  AboutSectionContainer,
+  AboutSectionText,
+  AboutSectionFooter,
+} from "./styles"
+import Text from "~/components/Utilities/Text"
+import ContactForm from "../../Form/ContactForm"
 
 const About = ({ query: { page17 } }) => {
-  console.log("ABOUT", page17)
   return (
     <AboutSectionContainer>
-      <h1>{page17.contenu.text}</h1>
-      <p>{page17.copyright}</p>
+      <AboutSectionText>
+        <Text
+          dangerouslySetInnerHTML={{
+            __html: page17.contenu.html,
+          }}
+          className="About__Section__Content"
+        />
+      </AboutSectionText>
+      <AboutSectionFooter>
+        <Text type="body" className="contact-info">
+          {page17.info}
+        </Text>
+      </AboutSectionFooter>
+      <ContactForm />
+      <Text type="smallText400" className="copy-right">
+        {page17.copyright}
+      </Text>
     </AboutSectionContainer>
   )
 }

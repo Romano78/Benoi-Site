@@ -9,27 +9,27 @@ export const ProjetSecContainer = styled.div`
   justify-content: center;
   background: ${props => props.theme.colors.secondary};
 
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
     width: 100%;
     height: 70vh;
-  }
-  h2 {
-    text-align: center;
-    padding-top: 50px;
-    position: relative;
-    width: fit-content;
-    margin: 0 auto;
-    z-index: 1;
+    h2 {
+      text-align: center;
+      padding-top: 50px;
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+      z-index: 1;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      background: white;
-      height: 50px;
-      width: 100%;
-      top: 108px;
-      z-index: -1;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: white;
+        height: 50px;
+        width: 100%;
+        top: 89px;
+        z-index: -1;
+      }
     }
   }
 `

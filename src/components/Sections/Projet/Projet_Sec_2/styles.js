@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const Section2Container = styled.div`
-  margin-top: 50px;
+  margin-top: 80px;
   width: 100%;
 `
 
@@ -21,9 +21,9 @@ export const FirstSlideContainer = styled.div`
         content: "";
         position: absolute;
         width: 100%;
-        top: 54px;
+        top: 44px;
         left: 0;
-        height: 50px;
+        height: 42px;
         background: white;
         z-index: -1;
       }
@@ -69,7 +69,7 @@ export const FirstSliderBodyText = styled.div`
         border: 3px solid white;
         width: 219px;
         height: 45px;
-        left: 113px;
+        left: 127px;
         bottom: -5px;
         opacity: 0.9;
       }

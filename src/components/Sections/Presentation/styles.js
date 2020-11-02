@@ -2,20 +2,29 @@ import styled from "@emotion/styled"
 
 export const HomeSectionContainer = styled.div`
   background: ${props => props.theme.colors.beige};
-  margin-top: 30px;
-  padding: 40px 80px 40px 80px;
+  padding-right: 40px;
+  padding-left: 80px;
+  padding-top: 40px;
   animation: 2s ease-in 0s 1 slideInFromLeft;
 
   p {
     margin-top: 15px;
   }
 
-  @keyframes slideInFromLeft {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    .presentation-contenu {
+      position: relative;
+      z-index: 1;
+      p:last-of-type::before {
+        content: "";
+        position: absolute;
+        width: 45%;
+        height: 20px;
+        background-color: white;
+        left: 110px;
+        bottom: -1px;
+        z-index: -1;
+      }
     }
   }
 
