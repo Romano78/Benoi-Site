@@ -86,7 +86,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/ghost-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-eslint`,
