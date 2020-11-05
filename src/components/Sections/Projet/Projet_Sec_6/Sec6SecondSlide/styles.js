@@ -1,10 +1,13 @@
 import styled from "@emotion/styled"
 
 export const Sec6SecondSlideContainer = styled.div`
-  height: 700px;
   display: flex;
   .Sec6-First__Slide__Content {
     font-size: 30px !important;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 50px;
   }
 `
 

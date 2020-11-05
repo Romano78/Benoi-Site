@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const TextStyled = styled.p`
   &.body {
     font-family: ${props => props.theme.fontFamily.tertiary};
-    font-size: ${props => props.theme.fonts.mediumText};
+    font-size: ${props => props.theme.fonts.bodyMobile};
     font-weight: normal;
     font-style: normal;
     line-height: normal;
@@ -25,13 +25,13 @@ export const TextStyled = styled.p`
   }
   &.smallText500 {
     font-family: ${props => props.theme.fontFamily.tertiary};
-    font-size: ${props => props.theme.fonts.mediumText};
+    font-size: ${props => props.theme.fonts.smallText};
     font-weight: normal;
     font-style: normal;
+    line-height: 1.3;
 
-    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.mediumText};
-      line-height: 1.7;
     }
   }
   &.smallText700 {
@@ -68,10 +68,11 @@ export const TextStyled = styled.p`
     }
   }
   &.bigText400 {
-    font-family: ${props => props.theme.fontFamily.primary};
-    font-size: ${props => props.theme.fonts.smallText};
+    font-family: "Times";
+    font-size: ${props => props.theme.fonts.mediumSizeText};
     font-weight: normal;
     font-style: normal;
+
     line-height: normal;
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.bigText};

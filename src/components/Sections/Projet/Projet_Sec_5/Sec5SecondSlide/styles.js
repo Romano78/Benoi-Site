@@ -1,6 +1,10 @@
 import styled from "@emotion/styled"
 
-export const Sec5FirstSlideContainer = styled.div``
+export const Sec5FirstSlideContainer = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 50px;
+  }
+`
 
 export const Sec5LeftContainer = styled.div`
   background-color: ${props => props.theme.colors.purpule};

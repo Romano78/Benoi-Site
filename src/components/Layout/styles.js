@@ -7,5 +7,7 @@ export const WidthLimiterContainer = styled.div`
   @media (min-width: ${theme.breakpoints.md}) {
     max-width: 1440px;
     width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 `

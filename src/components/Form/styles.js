@@ -130,16 +130,27 @@ export const MessageContainerMain = styled.div`
   }
 
   .Error-Message {
-    color: ${localTheme.colors.secondary};
-    font-family: ${props => props.theme.fonts.tertiary};
+    p {
+      font-size: 16px !important;
+    }
+    color: white;
+    font-family: ${props => props.theme.fonts.primary};
+    width: 100%;
   }
   .Success-Message {
     color: green;
-    font-family: ${props => props.theme.fonts.tertiary};
 
     @media (max-width: ${localTheme.breakpoints.md}) {
       width: 100%;
     }
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
   }
 `
 

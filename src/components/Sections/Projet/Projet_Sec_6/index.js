@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Slider from "../../../Slider"
 import Sec6FirstSlide from "./Sec6FirstSlide"
 import Sec6SecondSlide from "./Sec6SecondSlide"
 import Sec6ThirdSlide from "./Sec6ThirdSlide"
@@ -13,10 +12,8 @@ const ProjetSection6 = ({
 }) => {
   return (
     <Section6Container>
-      <Slider slidesToShow={1} slidesToScroll={1}>
-        <Sec6FirstSlide query={querySection6P1} />
-        <Sec6SecondSlide query={querySection6P2} />
-      </Slider>
+      <Sec6FirstSlide query={querySection6P1} />
+      <Sec6SecondSlide query={querySection6P2} />
       <Sec6ThirdSlide query={querySection6P3} />
     </Section6Container>
   )

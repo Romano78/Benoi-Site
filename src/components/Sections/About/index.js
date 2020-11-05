@@ -8,33 +8,33 @@ import {
 import Text from "~/components/Utilities/Text"
 import ContactForm from "../../Form/ContactForm"
 
-const About = ({ query: { page17 } }) => {
+const About = ({ queryPage17 }) => {
+  console.log("ABOUT PAGE", queryPage17.prismicPage17.data)
   return (
     <AboutSectionContainer>
       <AboutSectionText>
         <Text
           dangerouslySetInnerHTML={{
-            __html: page17.contenu.html,
+            __html: queryPage17.prismicPage17.data.contenu.html,
           }}
           className="About__Section__Content"
         />
       </AboutSectionText>
       <AboutSectionFooter>
         <Text type="body" className="contact-info">
-          {page17.info}
+          {queryPage17.prismicPage17.data.info}
         </Text>
       </AboutSectionFooter>
       <ContactForm />
       <Text type="smallText400" className="copy-right">
-        {page17.copyright}
+        {queryPage17.prismicPage17.data.copyright}
       </Text>
     </AboutSectionContainer>
   )
 }
 
 About.propTypes = {
-  query: PropTypes.object,
-  page17: PropTypes.object,
+  queryPage17: PropTypes.object,
 }
 
 export default About

@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -85,7 +86,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
+        icon: `src/images/ghost-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-eslint`,

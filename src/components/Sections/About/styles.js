@@ -44,7 +44,7 @@ export const AboutSectionText = styled.div`
 `
 
 export const AboutSectionFooter = styled.div`
-  padding-left: 350px;
+  padding-left: 185px;
 
   .contact {
   }

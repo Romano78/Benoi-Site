@@ -36,7 +36,7 @@ const ContactForm = () => {
           message: "",
         })
         setFormValue({ name: "", email: "", text: "" })
-      }, 100)
+      }, 5000)
     }
   }, [formSuccess])
 
@@ -153,13 +153,12 @@ const ContactForm = () => {
             focused={false}
           />
           <MessageContainerMain>
-            <button type="submit">Buton</button>
+            <button type="submit">Send</button>
 
             <MessageContainer
               className={formStatus.state ? "Success-Message" : "Error-Message"}
             >
-              <Text type="body">{formStatus.message}</Text>
-              <Text type="body" className="Error-Message"></Text>
+              <Text type="smallText400">{formStatus.message}</Text>
             </MessageContainer>
           </MessageContainerMain>
         </ContactFormStyled>

@@ -13,7 +13,7 @@ export const TitleStyled = styled.p`
     }
   }
   &.heading2 {
-    font-size: ${theme.fonts.heading6};
+    font-size: ${theme.fonts.heading3};
     font-family: ${theme.fontFamily.primary};
     font-style: normal;
     line-height: normal;

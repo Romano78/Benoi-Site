@@ -1,118 +1,150 @@
 import styled from "@emotion/styled"
+import Text from "~/components/Utilities/Text"
+
+export const LinkSection3Text = styled(Text)`
+  font-size: 12px !important;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+`
 
 export const SecondSliderContainer = styled.div`
+  background: ${props => props.theme.colors.tertiary};
+  margin-top: 50px;
+  text-align: center;
+`
+
+export const SecondSliderHeader = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    margin-bottom: 50px;
-    display: flex !important;
+    padding-top: 50px;
   }
 `
 
 export const SecondSliderContent = styled.div`
-  background-color: ${props => props.theme.colors.tertiary};
-  width: 100%;
-  height: 769px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 160px;
-  position: relative;
-  padding-top: 40px;
-`
-
-export const SecondSliderBodyText = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    display: flex;
-    justify-content: space-between;
   }
 `
-export const SecondSliderImg = styled.div`
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    display: flex;
-  }
-`
-
-export const PetitGraphContainer = styled.div``
 
 export const GrandGraphContent = styled.div`
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+  }
+`
+
+export const PetitGraphContent = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  .test {
     position: relative;
-    .grand-cochon {
+
+    .city-Quebec {
+      font-size: 20px;
       position: absolute;
-      bottom: 33px;
-      img {
-        width: 86%;
+      left: 41%;
+      bottom: 41%;
+    }
+
+    .Price-Québec {
+      font-size: 40px;
+      position: absolute;
+      bottom: 28%;
+      right: 27%;
+      color: white;
+      font-family: "Times";
+    }
+
+    .chiffre-description {
+      font-size: 20px;
+      position: absolute;
+      bottom: 13px;
+      right: -96px;
+      width: 25%;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    .test {
+      position: relative;
+
+      .city-Quebec {
+        font-size: 20px;
+        position: absolute;
+        left: -35%;
+        bottom: 41%;
       }
 
-      .city-Canada {
+      .Price-Québec {
+        font-size: 40px;
         position: absolute;
-        bottom: 160px;
-        font-size: 30px;
-        left: -130px;
-        z-index: 1;
-
-        &::after {
-          content: "";
-          width: 100%;
-          background-color: white;
-          height: 20px;
-          position: absolute;
-          right: 0;
-          top: 20px;
-          z-index: -1;
-        }
-      }
-
-      .Price-Canada {
-        position: absolute;
-        bottom: 75px;
-        left: 48px;
-        font-size: 50px;
+        bottom: 27%;
+        right: 57%;
         color: white;
+        font-family: "Times";
+      }
+
+      .chiffre-description {
+        font-size: 20px;
+        position: absolute;
+        bottom: 9%;
+        right: -23%;
+        width: 38%;
       }
     }
   }
 `
-export const PetitGraphContentPetit = styled.div`
+
+export const PetitGraphBody = styled.div`
   position: relative;
-  margin-top: 100px;
-  margin-left: 100px;
   img {
-    width: 100%;
+    width: 38%;
+    padding-top: 79px;
   }
-
-  .Price-Québec {
-    position: absolute;
-    font-size: 60px;
-    bottom: 100px;
-    left: 20px;
-    font-weight: bold;
-    color: white;
-  }
-
-  .chiffre-description {
-    position: absolute;
-    bottom: 30px;
-    right: -160px;
-    font-size: 25px;
-    width: 60%;
-  }
-
-  .city-Quebec {
-    position: absolute;
-    left: -150px;
-    font-size: 30px;
-    bottom: 190px;
-    z-index: 1;
-
-    &::after {
-      content: "";
-      width: 100%;
-      background-color: white;
-      height: 20px;
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    .city-Quebec {
+      font-size: 20px;
       position: absolute;
-      right: 0;
-      top: 20px;
-      z-index: -1;
+      bottom: 111px;
+      right: 271px;
     }
+
+    .Price-Québec {
+      font-size: 40px;
+      position: absolute;
+      bottom: 75px;
+      right: 125px;
+      color: white;
+      font-family: "Times";
+    }
+
+    .chiffre-description {
+      font-size: 20px;
+      position: absolute;
+      bottom: 13px;
+      right: -96px;
+      width: 25%;
+    }
+  }
+`
+
+export const SecondSliderImg = styled.div``
+
+export const GrandGraphBodyImg = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const PetiGraphBodyImg = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`
+
+export const SectionSliderBody = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.s}) {
   }
 `

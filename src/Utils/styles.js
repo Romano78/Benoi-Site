@@ -48,10 +48,12 @@ export const theme = {
     heading6: "14px",
     largestText: "80px",
     largeTextFont: "43px",
-    body: "24px",
+    body: "34px",
     bigText: "30px",
     smallText: "12px",
     mediumText: "22px",
+    mediumSizeText: "14px",
+    bodyMobile: "18px",
   },
   letterSpacing: {
     heading1: "3px",
@@ -93,12 +95,12 @@ export const GlobalStyle = props => (
         background-color: #ffffff;
         scroll-behavior: smooth;
         overflow: visible;
-        font-family: "Roboto";
       }
       html {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
+        overflow-y: scroll;
       }
     `}
   />

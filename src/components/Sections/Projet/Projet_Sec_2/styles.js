@@ -1,14 +1,36 @@
 import styled from "@emotion/styled"
 
 export const Section2Container = styled.div`
-  margin-top: 80px;
+  margin-top: 20px;
   width: 100%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 80px;
+  }
 `
 
 export const FirstSlideContainer = styled.div`
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    display: flex !important;
+  display: flex !important;
+  h2 {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 33px;
 
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 25px;
+      left: 0;
+      height: 25px;
+      background: white;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     h2 {
       width: fit-content;
       margin: 0 auto;
@@ -36,24 +58,46 @@ export const FirstSlideContainer = styled.div`
 `
 
 export const SecondSliderContainer = styled.div`
+  display: flex !important;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-bottom: 50px;
-    display: flex !important;
+    padding-top: 200px;
   }
 `
 
 export const FirstSliderContent = styled.div`
+  padding-top: 141px;
+  padding-bottom: 141px;
   background-color: ${props => props.theme.colors.secondary};
-  width: 60%;
-  height: 690px;
+  width: 100%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding-top: 0;
+    padding-bottom: 150px;
+    width: 60%;
+  }
 `
 
 export const SecondSliderContent = styled.div`
   background-color: ${props => props.theme.colors.secondary};
+  padding-top: 150px;
+  padding-bottom: 150px;
   width: 60%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
 `
 
 export const FirstSliderBodyText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     display: flex;
     justify-content: center;
@@ -61,7 +105,6 @@ export const FirstSliderBodyText = styled.div`
 
     .First__Slide__Content {
       position: relative;
-      font-size: 34px;
 
       &::after {
         content: "";
@@ -78,48 +121,51 @@ export const FirstSliderBodyText = styled.div`
 `
 
 export const SecondSliderBodyText = styled.div`
+  display: flex;
+  justify-content: center;
+
+  .Second__Slide__Content {
+    p:last-of-type {
+      margin-top: 33px;
+      border: 2px solid white;
+      width: fit-content;
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    height: 690px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .Second__Slide__Content {
-      position: relative;
-      font-size: 34px;
-      line-height: normal;
-
-      &::after {
-        content: "";
-        position: absolute;
-        border: 3px solid white;
-        width: 110%;
-        height: 45px;
-        left: -21px;
-        right: 0;
-        bottom: 0;
-        opacity: 0.9;
-      }
-
-      p:last-of-type {
-        margin-top: 33px;
-      }
-    }
   }
 `
 
 export const FirstSliderImg = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  img {
+    width: 40%;
+  }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: center;
+
+    img {
+      width: 50%;
+    }
   }
 `
 export const SecondSliderImg = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 40%;
+  img {
+    width: 62%;
+  }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding-left: 30px;
 
     img {

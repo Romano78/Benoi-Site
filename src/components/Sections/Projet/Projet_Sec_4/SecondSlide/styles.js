@@ -1,8 +1,8 @@
 import styled from "@emotion/styled"
 
 export const SecondSlideSec4Container = styled.div`
-  height: 720px;
   margin-top: 80px;
+  padding-bottom: 100px;
 
   background: linear-gradient(
     to right,

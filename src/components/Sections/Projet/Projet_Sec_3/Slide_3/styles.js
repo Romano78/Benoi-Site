@@ -5,8 +5,26 @@ export const Sec3Slide3Container = styled.div`
   width: 100%;
   padding-top: 40px;
 
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 50px;
+  }
+
   .Sec3__Slide3-Titre {
     padding-left: 160px;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20%;
+      background: white;
+      height: 16px;
+      z-index: -1;
+      right: 230px;
+      bottom: -1px;
+    }
   }
 `
 
@@ -18,22 +36,6 @@ export const Sec3Slide3BodyContainer = styled.div`
 `
 export const Sec3Slide3FirstGraphContainer = styled.div`
   position: relative;
-  /* .test {
-    position: absolute;
-    bottom: 208px;
-    left: 100px;
-    font-family: initial;
-    font-size: 37px;
-    font-weight: bold;
-  }
-
-  .test-2 {
-    position: absolute;
-    font-family: initial;
-    font-size: 56px;
-    color: white;
-    transform: translate(153%, -190%);
-  } */
 `
 export const Sec3Slide3QuebecImg = styled.div`
   padding-left: 87px;
@@ -46,10 +48,23 @@ export const Sec3Slide3QuebecImg = styled.div`
   .test {
     position: absolute;
     width: 100%;
-    font-size: 30px;
+    font-size: 30px !important;
     top: 61%;
-    left: 22%;
+    left: 26%;
     font-family: times;
+    z-index: 1;
+    width: fit-content;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      background: ${props => props.theme.colors.tertiary};
+      left: 0;
+      top: 20px;
+      z-index: -1;
+    }
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: 30px;
@@ -67,6 +82,7 @@ export const Sec3Slide3QuebecImg = styled.div`
     font-size: 16px;
     color: white;
     font-family: times;
+    font-weight: bold;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: 30px;
@@ -92,6 +108,19 @@ export const Sec3Slide3CanadaImg = styled.div`
     top: 59%;
     left: 7%;
     font-family: times;
+    width: fit-content;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      background: ${props => props.theme.colors.tertiary};
+      left: 0;
+      top: 20px;
+      z-index: -1;
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {

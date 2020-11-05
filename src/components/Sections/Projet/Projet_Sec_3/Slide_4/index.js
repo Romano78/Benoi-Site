@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Slider4Section3Container } from "./styles"
+import Text from "~/components/Utilities/Text"
+import Icon from "~/components/Icon"
 
 const Slider4 = ({ querySection3P4 }) => {
   return (
@@ -11,7 +13,16 @@ const Slider4 = ({ querySection3P4 }) => {
       </div>
       <div>
         {querySection3P4.option.map((info, index) => {
-          return <p key={index}>{info.point}</p>
+          return (
+            <div key={index} className="test-2">
+              <div className="container-test">
+                <div className="Icon-container">
+                  <Icon type="option" />
+                </div>
+                <Text type="body">{info.point}</Text>
+              </div>
+            </div>
+          )
         })}
       </div>
     </Slider4Section3Container>
