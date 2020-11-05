@@ -1,15 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Text from "~/components/Utilities/Text"
+import Fade from "react-reveal/Fade"
 
-import { Section6ThirdSlideContainer } from "./styles"
+import {
+  Section6ThirdSlideContainer,
+  Section6ThirdText,
+  Section6ThirdImg,
+} from "./styles"
 
 const Sec6ThirdSlide = ({ query }) => {
-  console.log("QUERY THIRD SLIDE", query)
   return (
-    <Section6ThirdSlideContainer>
-      <h1>{query.information}</h1>
-      <img src={query.graph.localFile.url} alt="" />
-    </Section6ThirdSlideContainer>
+    <Fade bottom distance="30px">
+      <Section6ThirdSlideContainer>
+        <Section6ThirdText>
+          <Text type="bigText">{query.information}</Text>
+        </Section6ThirdText>
+        <Section6ThirdImg>
+          <img src={query.graph.localFile.url} alt="" />
+        </Section6ThirdImg>
+      </Section6ThirdSlideContainer>
+    </Fade>
   )
 }
 

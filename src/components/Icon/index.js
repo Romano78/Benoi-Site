@@ -5,6 +5,7 @@ import { DoubleArrow } from "./assets/DoubleArrow"
 import { Equal } from "./assets/Equal"
 import { SlideArrow } from "./assets/SlideArrow"
 import { Option } from "./assets/Option"
+import { Line } from "./assets/Line"
 
 const Icon = ({ type }) => {
   switch (type) {
@@ -18,6 +19,8 @@ const Icon = ({ type }) => {
       return <SlideArrow />
     case "option":
       return <Option />
+    case "line":
+      return <Line />
     default:
       return ""
   }

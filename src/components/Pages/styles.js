@@ -1,8 +1,6 @@
 import styled from "@emotion/styled"
 
 export const HomePageContainer = styled.div`
-  margin-top: 40px;
-
   .Header__Title {
     text-align: center;
   }
@@ -19,7 +17,6 @@ export const HomePageContainer = styled.div`
 export const HomeMenuLinks = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 15px;
   padding-bottom: 10px; /* for nav test */
 
   p {

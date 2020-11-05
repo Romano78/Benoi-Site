@@ -160,7 +160,7 @@ export const query = graphql`
                     }
                   }
                   titre {
-                    html
+                    text
                   }
                   content {
                     html
@@ -224,6 +224,11 @@ export const query = graphql`
               }
               ... on PrismicPage13 {
                 data {
+                  graph {
+                    localFile {
+                      url
+                    }
+                  }
                   don
                   don_number
                   imposition_remuneration
@@ -288,9 +293,11 @@ export const query = graphql`
               ... on PrismicPage17 {
                 data {
                   contenu {
-                    text
+                    html
                   }
+                  contact
                   copyright
+                  info
                 }
               }
             }

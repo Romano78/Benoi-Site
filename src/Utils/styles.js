@@ -40,17 +40,20 @@ export const theme = {
     primary: "Roboto",
   },
   fonts: {
-    heading1: "64px",
-    heading2: "90px",
-    heading3: "32px",
+    heading1: "60px",
+    heading2: "70px",
+    heading3: "40px",
     heading4: "30px",
     heading5: "24px",
-    heading6: "18px",
-    largeTextFont: "80px",
-    body: "24px",
-    bigText: "37px",
-    smallText: "30px",
-    mediumText: "28px",
+    heading6: "14px",
+    largestText: "80px",
+    largeTextFont: "43px",
+    body: "34px",
+    bigText: "30px",
+    smallText: "12px",
+    mediumText: "22px",
+    mediumSizeText: "14px",
+    bodyMobile: "18px",
   },
   letterSpacing: {
     heading1: "3px",
@@ -92,12 +95,12 @@ export const GlobalStyle = props => (
         background-color: #ffffff;
         scroll-behavior: smooth;
         overflow: visible;
-        font-family: "Roboto";
       }
       html {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
+        overflow-y: scroll;
       }
     `}
   />

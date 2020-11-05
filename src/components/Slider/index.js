@@ -4,6 +4,8 @@ import Slider from "react-slick"
 import { GallerySliderStyling } from "./styles"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import ArrowRight from "../SliderArrow/ArrowRight"
+import ArrowLeft from "../SliderArrow/ArrowLeft"
 
 const GallerySliderContent = ({
   children,
@@ -13,7 +15,7 @@ const GallerySliderContent = ({
   //   infinite,
 }) => {
   const settings = {
-    dots: false,
+    dots: true,
     // infinite: infinite,
     speed: 500,
     slidesToShow: slidesToShow,
@@ -22,7 +24,13 @@ const GallerySliderContent = ({
 
   return (
     <GallerySliderStyling className={className ? className : ""}>
-      <Slider {...settings}>{children}</Slider>
+      <Slider
+        {...settings}
+        prevArrow={<ArrowLeft />}
+        nextArrow={<ArrowRight />}
+      >
+        {children}
+      </Slider>
     </GallerySliderStyling>
   )
 }

@@ -1,56 +1,61 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Text from "../../../../Utilities/Text"
 import {
   SecondSliderContainer,
   SecondSliderContent,
-  SecondSliderBodyText,
-  PetitGraphContainer,
-  PetitGraphContentPetit,
   PetitGraphContent,
+  GrandGraphContent,
+  SecondSliderHeader,
+  SectionSliderBody,
+  LinkSection3Text,
 } from "./styles"
 
-import Text from "../../../../Utilities/Text"
-
 const Slider2 = ({ querySection3P2 }) => {
+  console.log(querySection3P2)
   return (
     <SecondSliderContainer>
-      <SecondSliderContent>
-        <Text
-          dangerouslySetInnerHTML={{ __html: querySection3P2.text.html }}
-          className="Sec3-Second__Slide__Content"
-          type="bigText400"
-        />
-        <SecondSliderBodyText>
-          <PetitGraphContainer>
-            <PetitGraphContentPetit>
-              <div style={{ paddingRight: "100px" }}>
-                <Text type="smallText800" className="city-Quebec">
-                  Québec
-                </Text>
-                <p className="Price-Québec">130$</p>
-              </div>
-              <img
+      <SectionSliderBody>
+        <SecondSliderHeader>
+          <Text
+            dangerouslySetInnerHTML={{ __html: querySection3P2.text.html }}
+            className="Sec3-Second__Slide__Content"
+            type="bigText400"
+          />
+        </SecondSliderHeader>
+        <SecondSliderContent>
+          <PetitGraphContent>
+            <div className="test">
+              <Text type="smallText800" className="city-Quebec">
+                {querySection3P2.ville}
+              </Text>
+              <p className="Price-Québec">{querySection3P2.chiffre_1} $</p>
+              <p className="chiffre-description">
+                {querySection3P2.chiffre_description}
+              </p>
+              {/* <img
                 src={querySection3P2.petit_graph.localFile.url}
                 alt=""
                 className="Objectif__Petit-Graph"
-              />
-            </PetitGraphContentPetit>
-          </PetitGraphContainer>
-          <PetitGraphContent>
-            <div>
-              <Text type="smallText800" className="city-Canada">
-                Canada
-              </Text>
-              <p className="Price-Canada">300$</p>
+              /> */}
             </div>
-            <img
-              src={querySection3P2.grand_graph.localFile.url}
-              alt=""
-              className="Objectif__Grand-Graph"
-            />
           </PetitGraphContent>
-        </SecondSliderBodyText>
-      </SecondSliderContent>
+          <GrandGraphContent>
+            <div className="test-2">
+              <Text type="smallText800" className="city-Canada">
+                {querySection3P2.pay}
+              </Text>
+              <p className="Price-Canada">{querySection3P2.chiffre_2} $</p>
+              {/* <img
+                src={querySection3P2.grand_graph.localFile.url}
+                alt=""
+                className="Objectif__Grand-Graph"
+              /> */}
+            </div>
+          </GrandGraphContent>
+        </SecondSliderContent>
+        <LinkSection3Text>{querySection3P2.liens}</LinkSection3Text>
+      </SectionSliderBody>
     </SecondSliderContainer>
   )
 }

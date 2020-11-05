@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Text from "../../../../Utilities/Text"
+import Icon from "~/components/Icon"
 import {
   Slider5Sec3Container,
   Slider5Sec3RightContainer,
@@ -31,6 +32,7 @@ const Slider5 = ({ querySection3P5 }) => {
           <CityQuebecContainer>
             <h3>Québec</h3>
             <p>834 $</p>
+            <Icon type="line" />
           </CityQuebecContainer>
           <CityCanadaContainer>
             <h3>Canada</h3>

@@ -1,5 +1,19 @@
 {
   "Main": {
+    "site_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Site Title"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "menu",
+        "placeholder": "ne pas toucher"
+      }
+    },
     "text_1": {
       "type": "Text",
       "config": {

@@ -12,6 +12,18 @@
       "config": {
         "label": "copyright"
       }
+    },
+    "contact": {
+      "type": "Text",
+      "config": {
+        "label": "contact"
+      }
+    },
+    "info": {
+      "type": "Text",
+      "config": {
+        "label": "info"
+      }
     }
   }
 }

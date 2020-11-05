@@ -2,23 +2,18 @@ import styled from "@emotion/styled"
 
 export const ProjetSecContainer = styled.div`
   width: 100%;
-  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: ${props => props.theme.colors.secondary};
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    width: 100%;
-    height: 70vh;
-  }
   h2 {
     text-align: center;
-    padding-top: 50px;
     position: relative;
     width: fit-content;
-    margin: 0 auto;
     z-index: 1;
 
     &::after {
@@ -26,10 +21,33 @@ export const ProjetSecContainer = styled.div`
       position: absolute;
       left: 0;
       background: white;
-      height: 50px;
+      height: 17px;
       width: 100%;
-      top: 108px;
+      top: 21px;
       z-index: -1;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+    h2 {
+      text-align: center;
+      position: relative;
+      width: fit-content;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: white;
+        height: 34px;
+        width: 100%;
+        top: 43px;
+        z-index: -1;
+      }
     }
   }
 `

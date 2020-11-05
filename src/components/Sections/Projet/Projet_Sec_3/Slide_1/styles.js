@@ -29,6 +29,26 @@ export const FirstSlideContainer = styled.div`
 `
 
 export const FirstSliderBodyText = styled.div`
+  .Sec3-First__Slide__Content {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+
+    p {
+      line-height: 1.6;
+    }
+
+    p:after {
+      content: "";
+      position: absolute;
+      background: white;
+      width: 100%;
+      height: 21px;
+      left: 0;
+      z-index: -1;
+      transform: translate(0, 150%);
+    }
+  }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     .Sec3-First__Slide__Content {
       position: relative;
@@ -56,18 +76,33 @@ export const FirstSliderBodyText = styled.div`
 export const FirstSliderContent = styled.div`
   background-color: ${props => props.theme.colors.tertiary};
   width: 100%;
-  height: 769px;
   display: flex;
   flex-direction: column;
-  padding-left: 160px;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  align-items: center;
   position: relative;
-  padding-top: 40px;
 
   .Objectif__Graphic {
     position: absolute;
     right: 0;
     bottom: 58px;
-    right: 100px;
+    right: 50px;
+    width: 30%;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding-left: 0;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 400px;
+
+    .Objectif__Graphic {
+      position: absolute;
+      right: 0;
+      bottom: 58px;
+      right: 100px;
+    }
   }
 `
 

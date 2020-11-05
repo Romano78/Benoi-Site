@@ -1,31 +1,42 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Text from "~/components/Utilities/Text"
+import Title from "~/components/Utilities/Title"
 
 import {
   Sec6SecondSlideContainer,
   Sec6SecondLeftSlide,
   Sec6SecondRightSlide,
+  Sec6SecondLeftTitle,
+  Sec6SecondLeftImg,
+  Sec6SecondRightText,
 } from "./styles"
+import Icon from "~/components/Icon"
 
 const Sec6SecondSlide = ({ query }) => {
-  console.log(query, "SECOND SLIDE")
   return (
     <Sec6SecondSlideContainer>
       <Sec6SecondLeftSlide>
-        <h1>{query.information}</h1>
-        <img src={query.graph.localFile.url} alt="" />
+        <Sec6SecondLeftTitle>
+          <Title type="heading2" as="h2">
+            {query.information}
+          </Title>
+        </Sec6SecondLeftTitle>
+        <Sec6SecondLeftImg>
+          <img src={query.graph.localFile.url} alt="" />
+        </Sec6SecondLeftImg>
       </Sec6SecondLeftSlide>
       <Sec6SecondRightSlide>
         {query.listes.map((info, index) => {
           return (
-            <div key={index}>
+            <Sec6SecondRightText key={index}>
+              <Icon type="option" />
               <Text
                 dangerouslySetInnerHTML={{ __html: info.list_text.html }}
-                className="Sec6-First__Slide__Content"
-                type="largeText"
+                className="Sec6-Second-Right-Container"
+                type="body"
               />
-            </div>
+            </Sec6SecondRightText>
           )
         })}
       </Sec6SecondRightSlide>

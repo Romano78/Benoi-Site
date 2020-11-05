@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import { HomePageContainer, HomeMenuLinks } from "./styles"
+import { HomePageContainer } from "./styles"
 import { WidthLimiterContainer } from "../Layout/styles"
 
 import Presentation from "../../components/Sections/Presentation"
@@ -47,20 +47,6 @@ const IndexLayout = ({
   return (
     <WidthLimiterContainer>
       <HomePageContainer>
-        <div className="test-nav">
-          <h1 className="Header__Title">{query.site_title.text}</h1>
-          <HomeMenuLinks>
-            {menuItems.length > 0
-              ? menuItems.map((item, index) => {
-                  return (
-                    <HomeMenuLinks key={index}>
-                      <p onClick={onClickHandler}>{item}</p>
-                    </HomeMenuLinks>
-                  )
-                })
-              : ""}
-          </HomeMenuLinks>
-        </div>
         {currentLink === menuItems[0] ? (
           <Presentation
             onClick={onClickHandler}

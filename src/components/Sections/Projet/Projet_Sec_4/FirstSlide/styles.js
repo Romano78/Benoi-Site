@@ -26,4 +26,38 @@ export const SlideSec4LeftBody = styled.div`
   padding-top: 150px;
   padding-left: 150px;
   width: 90%;
+
+  .Principe-Title {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      background: white;
+      height: 40px;
+      left: 0;
+      top: 41px;
+      z-index: -1;
+    }
+  }
+
+  .Principe-SubTitle {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    width: fit-content;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 106%;
+      height: 45px;
+      left: -9px;
+      top: 23px;
+      border: 3px solid white;
+    }
+  }
 `

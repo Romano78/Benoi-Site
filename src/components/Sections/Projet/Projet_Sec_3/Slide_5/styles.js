@@ -4,6 +4,10 @@ export const Slider5Sec3Container = styled.div`
   width: 100%;
   height: 769px;
   display: flex;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 50px;
+  }
 `
 
 export const Slider5Sec3RightContainer = styled.div`
@@ -44,6 +48,7 @@ export const Slider5Sec3LeftContainer = styled.div`
     margin-bottom: 50px;
     font-size: 50px;
     font-family: "Times";
+    border: 1px solid ${props => props.theme.colors.tertiary};
   }
 `
 
@@ -57,9 +62,25 @@ export const LeftContainerBody = styled.div`
     font-size: 32px;
     font-family: "times";
     margin-bottom: 20px;
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background: ${props => props.theme.colors.tertiary};
+      left: 0;
+      top: 25px;
+      height: 20px;
+      z-index: -1;
+    }
   }
   p {
     font-size: 60px;
+    font-family: "Times New Roman", Times, serif;
   }
 `
 

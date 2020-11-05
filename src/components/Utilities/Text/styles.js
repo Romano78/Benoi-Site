@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const TextStyled = styled.p`
   &.body {
     font-family: ${props => props.theme.fontFamily.tertiary};
-    font-size: ${props => props.theme.fonts.mediumText};
+    font-size: ${props => props.theme.fonts.bodyMobile};
     font-weight: normal;
     font-style: normal;
     line-height: normal;
@@ -14,25 +14,24 @@ export const TextStyled = styled.p`
   }
   &.smallText400 {
     font-family: ${props => props.theme.fontFamily.tertiary};
-    font-size: ${props => props.theme.fonts.links};
-    color: ${props => props.theme.colors.black};
+    font-size: ${props => props.theme.fonts.smallText};
     font-weight: normal;
     font-style: normal;
     line-height: normal;
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      font-size: ${props => props.theme.fonts.mediumText};
-      opacity: 0.4;
+      font-size: ${props => props.theme.fonts.body};
+      line-height: 1.6;
     }
   }
   &.smallText500 {
     font-family: ${props => props.theme.fontFamily.tertiary};
-    font-size: ${props => props.theme.fonts.mediumText};
+    font-size: ${props => props.theme.fonts.smallText};
     font-weight: normal;
     font-style: normal;
+    line-height: 1.3;
 
-    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.mediumText};
-      line-height: 1.7;
     }
   }
   &.smallText700 {
@@ -69,19 +68,31 @@ export const TextStyled = styled.p`
     }
   }
   &.bigText400 {
-    font-family: ${props => props.theme.fontFamily.primary};
-    font-size: ${props => props.theme.fonts.bigText};
-    font-weight: bold;
+    font-family: "Times";
+    font-size: ${props => props.theme.fonts.mediumSizeText};
+    font-weight: normal;
     font-style: normal;
+
     line-height: normal;
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.bigText};
     }
   }
 
+  &.listText {
+    font-family: ${props => props.theme.fontFamily.primary};
+    font-size: ${props => props.theme.fonts.smallText};
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: ${props => props.theme.fonts.body};
+    }
+  }
+
   &.largeText {
     font-family: ${props => props.theme.fontFamily.primary};
-    font-size: ${props => props.theme.fonts.largeTextFont};
+    font-size: ${props => props.theme.fonts.body};
     font-weight: lighter;
     font-style: normal;
     line-height: normal;
@@ -89,6 +100,18 @@ export const TextStyled = styled.p`
       font-size: ${props => props.theme.fonts.largeTextFont};
     }
   }
+
+  &.bigText {
+    font-family: ${props => props.theme.fontFamily.primary};
+    font-size: ${props => props.theme.fonts.body};
+    font-weight: lighter;
+    font-style: normal;
+    line-height: normal;
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: ${props => props.theme.fonts.largestText};
+    }
+  }
+
   a {
     color: ${props => props.theme.colors.secondary};
   }

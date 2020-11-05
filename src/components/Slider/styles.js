@@ -2,7 +2,6 @@ import styled from "@emotion/styled"
 // import Icon from '~/components/Icon'
 
 export const GallerySliderStyling = styled.div`
-  margin-right: -22px;
   .slick-arrow,
   .slick-prev,
   .slick-next {
@@ -15,18 +14,9 @@ export const GallerySliderStyling = styled.div`
     display: none;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      display: block;
-      position: absolute;
-      margin: 0px;
-      padding: 0px;
+      right: 64px;
+      top: -19px;
       left: unset;
-      width: 44px;
-      height: 44px;
-      bottom: -44px;
-      top: unset;
-      right: 101px;
-      transform: translate(0, 100%);
-      z-index: 1;
     }
   }
 
@@ -34,7 +24,7 @@ export const GallerySliderStyling = styled.div`
     display: none;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      display: block;
+      /* display: block;
       position: absolute;
       margin: 0px;
       padding: 0px;
@@ -44,7 +34,7 @@ export const GallerySliderStyling = styled.div`
       top: 100%;
       transform: translate(0, 100%);
       width: 44px;
-      height: 44px;
+      height: 44px; */
     }
   }
 

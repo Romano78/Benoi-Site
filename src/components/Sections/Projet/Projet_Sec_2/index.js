@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Slider from "../../../Slider"
 import Title from "../../../Utilities/Title"
 import Text from "../../../Utilities/Text"
+import Fade from "react-reveal/Fade"
+
 import {
   Section2Container,
   FirstSlideContainer,
@@ -20,8 +21,9 @@ const ProjetSection2 = ({
   querySection2P2: querySection2P2,
 }) => {
   return (
-    <Section2Container>
-      <Slider slidesToShow={1} slidesToScroll={1}>
+    <Fade bottom distance="30px">
+      <Section2Container id="section-2">
+        {/* <a href="#section-3">SS</a> */}
         <FirstSlideContainer>
           <FirstSliderContent>
             <Title as="h2" type="heading2">
@@ -29,8 +31,11 @@ const ProjetSection2 = ({
             </Title>
             <FirstSliderBodyText>
               <Text
-                dangerouslySetInnerHTML={{ __html: querySection2.contenu.html }}
+                dangerouslySetInnerHTML={{
+                  __html: querySection2.contenu.html,
+                }}
                 className="First__Slide__Content"
+                type="body"
               />
             </FirstSliderBodyText>
           </FirstSliderContent>
@@ -41,7 +46,7 @@ const ProjetSection2 = ({
             />
           </FirstSliderImg>
         </FirstSlideContainer>
-        <SecondSliderContainer>
+        <SecondSliderContainer id="section-3">
           {querySection2P2?.graphs?.length > 0 ? (
             <SecondSliderImg>
               {querySection2P2.graphs.map((img, index) => {
@@ -65,12 +70,13 @@ const ProjetSection2 = ({
                   __html: querySection2P2.contenu.html,
                 }}
                 className="Second__Slide__Content"
+                type="body"
               />
             </SecondSliderBodyText>
           </SecondSliderContent>
         </SecondSliderContainer>
-      </Slider>
-    </Section2Container>
+      </Section2Container>
+    </Fade>
   )
 }
 
