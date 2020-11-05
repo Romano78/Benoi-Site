@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import TextField from "@material-ui/core/TextField"
 import { ThemeProvider } from "@material-ui/core/styles"
-import { validateInput, validateAll } from "../../Utils/Function/ValidateForm"
+import { validateInput, validateAll } from "../../utils/Function/ValidateForm"
 
 import Text from "~/components/Utilities/Text"
 import {
