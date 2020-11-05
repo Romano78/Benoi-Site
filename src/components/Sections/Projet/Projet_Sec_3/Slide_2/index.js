@@ -33,11 +33,11 @@ const Slider2 = ({ querySection3P2 }) => {
               <p className="chiffre-description">
                 {querySection3P2.chiffre_description}
               </p>
-              {/* <img
+              <img
                 src={querySection3P2.petit_graph.localFile.url}
                 alt=""
                 className="Objectif__Petit-Graph"
-              /> */}
+              />
             </div>
           </PetitGraphContent>
           <GrandGraphContent>
@@ -46,11 +46,11 @@ const Slider2 = ({ querySection3P2 }) => {
                 {querySection3P2.pay}
               </Text>
               <p className="Price-Canada">{querySection3P2.chiffre_2} $</p>
-              {/* <img
+              <img
                 src={querySection3P2.grand_graph.localFile.url}
                 alt=""
                 className="Objectif__Grand-Graph"
-              /> */}
+              />
             </div>
           </GrandGraphContent>
         </SecondSliderContent>

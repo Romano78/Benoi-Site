@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { ProjetSecContainer, ProjetSec1Body } from "./styles"
 import Title from "../../../Utilities/Title"
 import Text from "../../../Utilities/Text"
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward"
 
 import Fade from "react-reveal/Fade"
 
@@ -16,7 +17,11 @@ const ProjetSection1 = ({ querySection1: querySection1 }) => {
         <ProjetSec1Body style={{ textAlign: "center" }}>
           <Text type="smallText700">Par {querySection1.prenom_1}</Text>
           <Text type="smallText700">{querySection1.prenom_2}</Text>
-          {/* <a href="#section-2">Test</a> */}
+          <div className="Link-Test-Container">
+            <a href="#section-2">
+              <ArrowDownwardIcon />
+            </a>
+          </div>
         </ProjetSec1Body>
       </ProjetSecContainer>
     </Fade>

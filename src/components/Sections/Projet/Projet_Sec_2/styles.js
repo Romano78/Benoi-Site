@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const Section2Container = styled.div`
-  margin-top: 20px;
+  padding-top: 150px;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -112,7 +112,7 @@ export const FirstSliderBodyText = styled.div`
         border: 3px solid white;
         width: 219px;
         height: 45px;
-        left: 127px;
+        left: 113px;
         bottom: -5px;
         opacity: 0.9;
       }

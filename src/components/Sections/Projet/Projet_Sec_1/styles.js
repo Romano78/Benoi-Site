@@ -54,4 +54,17 @@ export const ProjetSecContainer = styled.div`
 export const ProjetSec1Body = styled.div`
   text-align: center;
   margin-top: 30px;
+
+  .Link-Test-Container {
+    border: 1px solid white;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+      color: white;
+    }
+  }
 `

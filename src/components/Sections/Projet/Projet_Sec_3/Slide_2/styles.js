@@ -17,13 +17,17 @@ export const SecondSliderContainer = styled.div`
 export const SecondSliderHeader = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 50px;
+    padding-right: 141px;
+    /* to be removed */
   }
 `
 
 export const SecondSliderContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: -78px;
   }
 `
 
@@ -32,6 +36,27 @@ export const GrandGraphContent = styled.div`
   display: flex;
   justify-content: center;
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    .test-2 {
+      position: relative;
+
+      .city-Canada {
+        font-size: 20px;
+        position: absolute;
+        right: 61%;
+        bottom: 25%;
+        left: -79%;
+      }
+
+      .Price-Canada {
+        font-size: 42px;
+        position: absolute;
+        bottom: 17%;
+        right: 58%;
+        color: white;
+        font-family: "Times";
+        font-weight: bold;
+      }
+    }
   }
 `
 
@@ -66,6 +91,11 @@ export const PetitGraphContent = styled.div`
       right: -96px;
       width: 25%;
     }
+
+    img {
+      width: 100%;
+      padding-top: 144px;
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -95,39 +125,6 @@ export const PetitGraphContent = styled.div`
         right: -23%;
         width: 38%;
       }
-    }
-  }
-`
-
-export const PetitGraphBody = styled.div`
-  position: relative;
-  img {
-    width: 38%;
-    padding-top: 79px;
-  }
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    .city-Quebec {
-      font-size: 20px;
-      position: absolute;
-      bottom: 111px;
-      right: 271px;
-    }
-
-    .Price-Québec {
-      font-size: 40px;
-      position: absolute;
-      bottom: 75px;
-      right: 125px;
-      color: white;
-      font-family: "Times";
-    }
-
-    .chiffre-description {
-      font-size: 20px;
-      position: absolute;
-      bottom: 13px;
-      right: -96px;
-      width: 25%;
     }
   }
 `
