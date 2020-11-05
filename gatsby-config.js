@@ -77,18 +77,18 @@ module.exports = {
         "~": path.join(__dirname, "src/"),
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `bruno-website`,
-        short_name: `bruno`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#000000`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `bruno-website`,
+    //     short_name: `bruno`,
+    //     start_url: `/`,
+    //     background_color: `#ffffff`,
+    //     theme_color: `#000000`,
+    //     display: `minimal-ui`,
+    //     icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+    //   },
+    // },
     `gatsby-plugin-eslint`,
     "gatsby-plugin-offline",
   ],
