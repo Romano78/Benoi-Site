@@ -7,7 +7,8 @@ export const TextStyled = styled.p`
     font-weight: normal;
     font-style: normal;
     line-height: normal;
-    @media (min-width: ${props => props.theme.breakpoints.md}) {
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: ${props => props.theme.fonts.body};
       line-height: 1.6;
     }
@@ -107,7 +108,7 @@ export const TextStyled = styled.p`
     font-weight: lighter;
     font-style: normal;
     line-height: normal;
-    @media (min-width: ${props => props.theme.breakpoints.md}) {
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: ${props => props.theme.fonts.largestText};
     }
   }

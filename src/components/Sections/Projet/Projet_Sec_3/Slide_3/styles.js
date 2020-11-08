@@ -3,151 +3,194 @@ import styled from "@emotion/styled"
 export const Sec3Slide3Container = styled.div`
   background-color: ${props => props.theme.colors.tertiary};
   width: 100%;
-  padding-top: 40px;
+  margin-top: 50px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-top: 50px;
   }
 
   .Sec3__Slide3-Titre {
-    padding-left: 160px;
-    position: relative;
-    z-index: 1;
-    width: fit-content;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 20%;
-      background: white;
-      height: 16px;
-      z-index: -1;
-      right: 230px;
-      bottom: -1px;
-    }
   }
+`
+
+export const Sec3Slide3Header = styled.div`
+  padding-top: 40px;
+  text-align: center;
 `
 
 export const Sec3Slide3BodyContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 `
-export const Sec3Slide3FirstGraphContainer = styled.div`
-  position: relative;
-`
+
 export const Sec3Slide3QuebecImg = styled.div`
-  padding-left: 87px;
-  padding-top: 41px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
-  img {
-    width: 100%;
-  }
-
-  .test {
+  .quebec-text {
     position: absolute;
-    width: 100%;
-    font-size: 30px !important;
-    top: 61%;
-    left: 26%;
-    font-family: times;
+    left: 22%;
+    top: 55%;
+    font-size: 12px;
     z-index: 1;
-    width: fit-content;
 
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 10px;
+      height: 5px;
+      top: 9px;
       background: ${props => props.theme.colors.tertiary};
+      width: 100%;
       left: 0;
-      top: 20px;
       z-index: -1;
     }
 
-    @media (min-width: ${props => props.theme.breakpoints.md}) {
-      font-size: 30px;
-    }
+    @media (min-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 20px;
 
-    @media (min-width: ${props => props.theme.breakpoints.l}) {
-      font-size: 40px;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        top: 15px;
+        background: ${props => props.theme.colors.tertiary};
+        width: 100%;
+        left: 0;
+        z-index: -1;
+      }
+    }
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      left: 32%;
     }
   }
 
-  .test-2 {
+  .pourcentage-quebec {
     position: absolute;
-    left: 61%;
-    bottom: 17%;
-    font-size: 16px;
+    left: 48%;
+    top: 75%;
+    font-size: 13px;
+    z-index: 1;
     color: white;
-    font-family: times;
-    font-weight: bold;
+    font-family: "Roboto";
+
+    @media (min-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 25px;
+      left: 50%;
+    }
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      font-size: 30px;
+      top: 70%;
+      left: 47%;
     }
 
     @media (min-width: ${props => props.theme.breakpoints.l}) {
-      font-size: 40px;
+      top: 70%;
+      left: 51%;
+      font-size: 25px;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+      top: 70%;
+      left: 48%;
+      font-size: 36px;
     }
   }
-`
 
-export const Sec3Slide3SecondGraphContainer = styled.div`
-  padding-top: 20px;
+  img {
+    width: 60%;
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      width: 40%;
+    }
+  }
 `
 
 export const Sec3Slide3CanadaImg = styled.div`
-  margin-left: 201px;
+  width: 50%;
   position: relative;
-  .test {
+
+  .canada-text {
     position: absolute;
-    width: 100%;
-    font-size: 30px;
-    top: 59%;
-    left: 7%;
-    font-family: times;
-    width: fit-content;
+    left: 12%;
+    top: 50%;
+    font-size: 12px;
     z-index: 1;
 
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 10px;
+      height: 5px;
+      top: 9px;
       background: ${props => props.theme.colors.tertiary};
+      width: 100%;
       left: 0;
-      top: 20px;
       z-index: -1;
     }
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    font-size: 30px;
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.l}) {
-    font-size: 40px;
-  }
-
-  .test-2 {
-    position: absolute;
-    left: 63%;
-    top: 30%;
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      font-size: 30px;
+      left: 22%;
+      top: 60%;
+      font-size: 25px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 20px;
+        top: 19px;
+        background: ${props => props.theme.colors.tertiary};
+        width: 100%;
+        left: 0;
+        z-index: -1;
+      }
     }
 
     @media (min-width: ${props => props.theme.breakpoints.l}) {
-      font-size: 51px;
+      left: 5%;
+      top: 60%;
+      font-size: 25px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 20px;
+        top: 19px;
+        background: ${props => props.theme.colors.tertiary};
+        width: 100%;
+        left: 0;
+        z-index: -1;
+      }
     }
   }
+
+  .pourcentage-canada {
+    position: absolute;
+    left: 64%;
+    top: 23%;
+    font-size: 15px;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto";
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 50px;
+      left: 63%;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.l}) {
+      font-size: 50px;
+      left: 63%;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+      font-size: 60px;
+      left: 63%;
+    }
+  }
+
   img {
-    width: 89%;
+    width: 90%;
   }
 `

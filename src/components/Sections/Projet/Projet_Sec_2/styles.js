@@ -59,6 +59,7 @@ export const FirstSlideContainer = styled.div`
 
 export const SecondSliderContainer = styled.div`
   display: flex !important;
+  margin-top: 50px;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-bottom: 50px;
     padding-top: 200px;

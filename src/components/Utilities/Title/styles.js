@@ -3,11 +3,11 @@ import { theme } from "~/utils/styles"
 
 export const TitleStyled = styled.p`
   &.heading1 {
-    font-size: ${theme.fonts.heading4};
+    font-size: ${theme.fonts.heading5};
     font-weight: normal;
     font-style: normal;
     line-height: 1.3;
-
+    font-family: "Roboto";
     @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: ${props => props.theme.fonts.heading1};
     }
@@ -119,6 +119,7 @@ export const TitleStyled = styled.p`
     line-height: 1.3;
     font-weight: normal;
     font-style: normal;
+    text-transform: capitalize;
     color: ${theme.colors.secondary};
     @media (min-width: ${theme.breakpoints.md}) {
       font-size: ${theme.fonts.heading5};
