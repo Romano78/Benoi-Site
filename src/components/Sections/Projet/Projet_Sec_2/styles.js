@@ -1,7 +1,6 @@
 import styled from "@emotion/styled"
 
 export const Section2Container = styled.div`
-  padding-top: 150px;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -67,8 +66,8 @@ export const SecondSliderContainer = styled.div`
 `
 
 export const FirstSliderContent = styled.div`
-  padding-top: 141px;
-  padding-bottom: 141px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: ${props => props.theme.colors.secondary};
   width: 100%;
 
@@ -81,11 +80,14 @@ export const FirstSliderContent = styled.div`
 
 export const SecondSliderContent = styled.div`
   background-color: ${props => props.theme.colors.secondary};
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   width: 60%;
+  padding: 20px 20px 20px 20px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding-top: 150px;
+    padding-bottom: 150px;
     width: 50%;
     padding-top: 0;
     padding-bottom: 0;
@@ -143,6 +145,7 @@ export const SecondSliderBodyText = styled.div`
 export const FirstSliderImg = styled.div`
   display: flex;
   justify-content: space-evenly;
+  width: 72%;
   img {
     width: 40%;
   }

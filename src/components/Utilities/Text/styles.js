@@ -104,7 +104,7 @@ export const TextStyled = styled.p`
 
   &.bigText {
     font-family: ${props => props.theme.fontFamily.primary};
-    font-size: ${props => props.theme.fonts.body};
+    font-size: 28px;
     font-weight: lighter;
     font-style: normal;
     line-height: normal;
