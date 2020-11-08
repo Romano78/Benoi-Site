@@ -42,11 +42,22 @@ export const FirstSliderBodyText = styled.div`
       content: "";
       position: absolute;
       background: white;
-      width: 100%;
+      width: 95%;
       height: 21px;
       left: 0;
       z-index: -1;
-      transform: translate(0, 150%);
+      transform: translate(0, 110%);
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        background: white;
+        width: 100%;
+        height: 21px;
+        left: 0;
+        z-index: -1;
+        transform: translate(0, 150%);
+      }
     }
   }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -78,8 +89,8 @@ export const FirstSliderContent = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
-  padding-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
   position: relative;
 
@@ -95,12 +106,12 @@ export const FirstSliderContent = styled.div`
     padding-left: 0;
     position: relative;
     padding-top: 40px;
-    padding-bottom: 400px;
+    padding-bottom: 250px;
 
     .Objectif__Graphic {
       position: absolute;
       right: 0;
-      bottom: 58px;
+      bottom: 0px;
       right: 100px;
     }
   }

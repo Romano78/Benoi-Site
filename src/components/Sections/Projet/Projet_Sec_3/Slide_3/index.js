@@ -3,37 +3,67 @@ import PropTypes from "prop-types"
 import {
   Sec3Slide3BodyContainer,
   Sec3Slide3Container,
-  Sec3Slide3FirstGraphContainer,
   Sec3Slide3QuebecImg,
   Sec3Slide3CanadaImg,
-  Sec3Slide3SecondGraphContainer,
+  Sec3Slide3Header,
 } from "./styles"
 import Text from "../../../../Utilities/Text"
 
 const Slider3 = ({ querySection3P3 }) => {
+  console.log(querySection3P3)
   return (
     <Sec3Slide3Container>
-      <Text
-        dangerouslySetInnerHTML={{ __html: querySection3P3.text.html }}
-        type="bigText400"
-        className="Sec3__Slide3-Titre"
-      />
+      <Sec3Slide3Header>
+        {querySection3P3?.text?.html ? (
+          <Text
+            dangerouslySetInnerHTML={{ __html: querySection3P3.text.html }}
+            type="bigText400"
+            className="Sec3__Slide3-Titre"
+          />
+        ) : (
+          ""
+        )}
+      </Sec3Slide3Header>
       <Sec3Slide3BodyContainer>
-        <Sec3Slide3FirstGraphContainer>
-          <Sec3Slide3QuebecImg>
+        <Sec3Slide3QuebecImg>
+          {querySection3P3?.graphic_quebec?.url ? (
             <img src={querySection3P3.graphic_quebec.url} alt="" />
-            <p className="test">Quebec</p>
-            <p className="test-2">19.8 %</p>
-          </Sec3Slide3QuebecImg>
-        </Sec3Slide3FirstGraphContainer>
+          ) : (
+            ""
+          )}
+          {querySection3P3?.ville ? (
+            <p className="quebec-text">{querySection3P3.ville}</p>
+          ) : (
+            ""
+          )}
+          {querySection3P3?.pourcentage_quebec ? (
+            <p className="pourcentage-quebec">
+              {querySection3P3.pourcentage_quebec}%
+            </p>
+          ) : (
+            ""
+          )}
+        </Sec3Slide3QuebecImg>
 
         <Sec3Slide3CanadaImg>
-          <img src={querySection3P3.graphic_canada.localFile.url} alt="" />
-          <p className="test">Canada</p>
-          <p className="test-2">25 %</p>
+          {querySection3P3?.graphic_canada?.localFile?.url ? (
+            <img src={querySection3P3.graphic_canada.localFile.url} alt="" />
+          ) : (
+            ""
+          )}
+          {querySection3P3?.pay ? (
+            <p className="canada-text">{querySection3P3.pay}</p>
+          ) : (
+            ""
+          )}
+          {querySection3P3.pourcentage_canada ? (
+            <p className="pourcentage-canada">
+              {querySection3P3.pourcentage_canada}%
+            </p>
+          ) : (
+            ""
+          )}
         </Sec3Slide3CanadaImg>
-
-        <Sec3Slide3SecondGraphContainer></Sec3Slide3SecondGraphContainer>
       </Sec3Slide3BodyContainer>
     </Sec3Slide3Container>
   )

@@ -15,6 +15,7 @@ export const HeaderContainer = styled.div`
 export const HeaderMenuList = styled.div`
   display: flex;
   justify-content: center;
+  text-transform: capitalize;
 
   .home-link.active {
     position: relative;
@@ -71,7 +72,11 @@ export const HeaderMenuList = styled.div`
     color: black;
     text-decoration: none;
     padding-right: 20px;
-    font-size: 30px;
     cursor: pointer;
+    font-size: 14px;
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 25px;
+    }
   }
 `

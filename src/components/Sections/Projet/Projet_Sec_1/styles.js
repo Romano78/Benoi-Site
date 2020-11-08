@@ -7,8 +7,8 @@ export const ProjetSecContainer = styled.div`
   align-items: center;
   justify-content: center;
   background: ${props => props.theme.colors.secondary};
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   h2 {
     text-align: center;
@@ -29,8 +29,8 @@ export const ProjetSecContainer = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 100px;
     width: 100%;
     h2 {
       text-align: center;
