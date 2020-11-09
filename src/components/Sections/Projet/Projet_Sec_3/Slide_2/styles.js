@@ -23,6 +23,7 @@ export const SecondSliderContainer = styled.div`
 `
 
 export const SecondSliderHeader = styled.div`
+  margin-bottom: 30px;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 50px;
   }

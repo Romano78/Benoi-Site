@@ -4,7 +4,7 @@ import { theme } from "~/utils/styles"
 export const TitleStyled = styled.p`
   &.heading1 {
     font-size: ${theme.fonts.heading5};
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     line-height: 1.3;
     font-family: "Roboto";

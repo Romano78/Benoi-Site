@@ -1,17 +1,12 @@
 import styled from "@emotion/styled"
 
 export const Sec6FirstSlideContainer = styled.div`
-  height: 700px;
   display: flex;
-
-  .Sec6-First__Slide__Content {
-    font-size: 30px !important;
-  }
 `
 
 export const Sec6FirstLeftSlide = styled.div`
   width: 50%;
-  background-color: ${props => props.theme.colors.yellow};
+  background: ${props => props.theme.colors.secondary};
 `
 
 export const Sec6FirstLeftImg = styled.div`
@@ -19,6 +14,7 @@ export const Sec6FirstLeftImg = styled.div`
   justify-content: center;
   margin-right: 50px;
   margin-top: 30px;
+  padding-bottom: 100px;
   img {
     width: 30%;
   }
@@ -64,12 +60,12 @@ export const Sec6FirstLeftTitle = styled.div`
 export const Sec6FirstRightText = styled.div`
   display: flex;
 
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 50px;
 
   svg {
     width: 50px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 30px;
   }
 `

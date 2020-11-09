@@ -91,6 +91,8 @@ export const ContactFormStyled = styled.form`
 
   #body {
     height: 150px !important;
+    padding-left: 18px;
+    padding-top: 10px;
   }
 
   #name-option {
@@ -138,7 +140,7 @@ export const MessageContainerMain = styled.div`
     width: 100%;
   }
   .Success-Message {
-    color: green;
+    color: white;
 
     @media (max-width: ${localTheme.breakpoints.md}) {
       width: 100%;

@@ -15,7 +15,7 @@ export const Sec5LeftContainerText = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     width: 100%;
     padding-left: 130px;
-    padding-right: 50px;
+    padding-right: 133px;
     margin: 0 auto;
     margin-bottom: 50px;
   }

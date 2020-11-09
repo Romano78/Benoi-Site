@@ -10,6 +10,7 @@ export const AboutSectionContainer = styled.div`
   .copy-right {
     text-align: center;
     margin-top: 50px;
+    padding-bottom: 20px;
   }
 `
 
@@ -22,31 +23,35 @@ export const AboutSectionText = styled.div`
     .About__Section__Content {
       p {
         line-height: 1.6 !important;
-        font-size: 60px !important;
-        font-family: "Times";
+        font-size: 30px !important;
         position: relative;
         width: fit-content;
         z-index: 1;
+
+        @media (min-width: ${props => props.theme.breakpoints.lg}) {
+          font-size: 50px !important;
+        }
       }
 
       p::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        background: white;
-        height: 39px;
-        z-index: -1;
-        left: 0;
-        top: 49px;
+        @media (min-width: ${props => props.theme.breakpoints.md}) {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background: white;
+          height: 33px;
+          z-index: -1;
+          left: 0;
+          top: 45px;
+        }
       }
     }
   }
 `
 
 export const AboutSectionFooter = styled.div`
-  padding-left: 185px;
-
-  .contact {
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    padding-left: 185px;
   }
 
   .contact-info {
@@ -59,6 +64,5 @@ export const AboutSectionFooter = styled.div`
 
   p {
     margin-top: 10px;
-    font-family: "Times";
   }
 `

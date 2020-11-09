@@ -14,7 +14,9 @@ const Sec6ThirdSlide = ({ query }) => {
     <Fade bottom distance="30px">
       <Section6ThirdSlideContainer>
         <Section6ThirdText>
-          <Text type="bigText">{query.information}</Text>
+          <Text type="bigText" className="section6-3slide-text">
+            {query.information}
+          </Text>
         </Section6ThirdText>
         <Section6ThirdImg>
           <img src={query.graph.localFile.url} alt="" />

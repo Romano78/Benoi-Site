@@ -29,8 +29,8 @@ export const ProjetSecContainer = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 162px;
+    padding-bottom: 127px;
     width: 100%;
     h2 {
       text-align: center;

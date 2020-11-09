@@ -86,6 +86,8 @@ export const Sec5LefttList = styled.div`
   .salaire-annuel-text {
     padding-left: 0 !important;
     font-weight: normal;
+    font-size: 16px;
+    opacity: 0.7;
   }
 
   .salaire-annuel-calcule {

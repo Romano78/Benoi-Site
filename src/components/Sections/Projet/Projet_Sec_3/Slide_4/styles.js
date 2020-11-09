@@ -7,7 +7,8 @@ export const Slider4Section3Container = styled.div`
 `
 export const Slider4Section3Header = styled.div`
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
+  margin-bottom: 30px;
 `
 
 export const Slider4Section3Img = styled.div`
@@ -27,6 +28,7 @@ export const Silder4Section3Options = styled.div`
   padding-bottom: 100px;
 `
 export const Slider4Section3OptionBody = styled.div``
+
 export const Slider4Section3OptionContent = styled.div`
   display: flex;
   padding-left: 19px;
@@ -38,6 +40,10 @@ export const Slider4Section3OptionContent = styled.div`
     display: flex;
     padding-top: 33px;
     max-width: 72%;
+
+    p {
+      font-size: 30px !important;
+    }
   }
 `
 export const Slider4Section3Icon = styled.div`

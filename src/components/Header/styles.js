@@ -25,10 +25,10 @@ export const HeaderMenuList = styled.div`
     &::after {
       content: "";
       position: absolute;
-      width: 90%;
-      height: 15px;
+      width: 100%;
+      height: 13px;
       left: 0;
-      top: 22px;
+      top: 18px;
       z-index: -1;
       background: ${props => props.theme.colors.beige};
     }
@@ -42,10 +42,10 @@ export const HeaderMenuList = styled.div`
     &::after {
       content: "";
       position: absolute;
-      width: 85%;
-      height: 15px;
+      width: 100%;
+      height: 13px;
       left: 0;
-      top: 22px;
+      top: 18px;
       z-index: -1;
       background: ${props => props.theme.colors.secondary};
     }
@@ -59,10 +59,10 @@ export const HeaderMenuList = styled.div`
     &::after {
       content: "";
       position: absolute;
-      width: 85%;
-      height: 15px;
+      width: 100%;
+      height: 13px;
       left: 0;
-      top: 22px;
+      top: 18px;
       z-index: -1;
       background: ${props => props.theme.colors.pink};
     }
@@ -71,12 +71,15 @@ export const HeaderMenuList = styled.div`
   a {
     color: black;
     text-decoration: none;
-    padding-right: 20px;
     cursor: pointer;
     font-size: 14px;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: 25px;
     }
+  }
+
+  a:not(:last-of-type) {
+    margin-right: 50px;
   }
 `

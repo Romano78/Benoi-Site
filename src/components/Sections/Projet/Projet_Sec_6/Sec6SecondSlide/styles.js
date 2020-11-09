@@ -2,9 +2,6 @@ import styled from "@emotion/styled"
 
 export const Sec6SecondSlideContainer = styled.div`
   display: flex;
-  .Sec6-First__Slide__Content {
-    font-size: 30px !important;
-  }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-top: 50px;
@@ -13,7 +10,7 @@ export const Sec6SecondSlideContainer = styled.div`
 
 export const Sec6SecondLeftSlide = styled.div`
   width: 50%;
-  background-color: ${props => props.theme.colors.yellow};
+  background: ${props => props.theme.colors.secondary};
 `
 export const Sec6SecondRightSlide = styled.div`
   width: 50%;
@@ -30,25 +27,29 @@ export const Sec6SecondLeftTitle = styled.div`
     z-index: 1;
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 86%;
-      background: white;
-      height: 40px;
-      left: 0;
-      top: 38px;
-      z-index: -1;
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        width: 81%;
+        background: white;
+        height: 31px;
+        left: 0;
+        top: 51px;
+        z-index: -1;
+      }
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      width: 75%;
-      background: white;
-      height: 40px;
-      left: 0;
-      top: 125px;
-      z-index: -1;
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        width: 75%;
+        background: white;
+        height: 33px;
+        left: 0;
+        top: 129px;
+        z-index: -1;
+      }
     }
   }
 `
@@ -58,6 +59,11 @@ export const Sec6SecondLeftImg = styled.div`
   justify-content: center;
   margin-right: 50px;
   margin-top: 30px;
+  padding-bottom: 100px;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding-bottom: 100px;
+  }
   img {
     width: 30%;
   }
@@ -66,7 +72,7 @@ export const Sec6SecondLeftImg = styled.div`
 export const Sec6SecondRightText = styled.div`
   display: flex;
 
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 50px;
 
   .Sec6-Second-Right-Container {
@@ -75,7 +81,7 @@ export const Sec6SecondRightText = styled.div`
 
   svg {
     width: 50px;
-    margin-top: 15px;
     margin-right: 30px;
+    margin-top: 5px;
   }
 `

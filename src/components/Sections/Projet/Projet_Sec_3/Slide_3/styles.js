@@ -15,6 +15,7 @@ export const Sec3Slide3Container = styled.div`
 
 export const Sec3Slide3Header = styled.div`
   padding-top: 40px;
+  margin-bottom: 30px;
   text-align: center;
 `
 
@@ -53,9 +54,9 @@ export const Sec3Slide3QuebecImg = styled.div`
       &::after {
         content: "";
         position: absolute;
-        height: 10px;
-        top: 15px;
-        background: ${props => props.theme.colors.tertiary};
+        height: 15px;
+        top: 19px;
+        background: #a8deb1;
         width: 100%;
         left: 0;
         z-index: -1;
@@ -63,6 +64,7 @@ export const Sec3Slide3QuebecImg = styled.div`
     }
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       left: 32%;
+      font-size: 25px;
     }
   }
 
@@ -70,7 +72,7 @@ export const Sec3Slide3QuebecImg = styled.div`
     position: absolute;
     left: 48%;
     top: 75%;
-    font-size: 13px;
+    font-size: 12px;
     z-index: 1;
     color: white;
     font-family: "Roboto";
@@ -148,14 +150,14 @@ export const Sec3Slide3CanadaImg = styled.div`
 
     @media (min-width: ${props => props.theme.breakpoints.l}) {
       left: 5%;
-      top: 60%;
+      top: 53%;
       font-size: 25px;
 
       &::after {
         content: "";
         position: absolute;
-        height: 20px;
-        top: 19px;
+        height: 15px;
+        top: 20px;
         background: ${props => props.theme.colors.tertiary};
         width: 100%;
         left: 0;
