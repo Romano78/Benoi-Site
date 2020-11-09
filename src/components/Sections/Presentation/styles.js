@@ -7,6 +7,10 @@ export const HomeSectionContainer = styled.div`
   padding-top: 20px;
   animation: 2s ease-in 0s 1 slideInFromLeft;
 
+  .presentation-first-p {
+    font-weight: bold !important;
+  }
+
   p {
     margin-top: 15px;
   }
@@ -51,9 +55,9 @@ export const HomeSectionContainer = styled.div`
         position: absolute;
         width: 100%;
         background: white;
-        height: 22px;
+        height: 13px;
         left: 0px;
-        top: 24px;
+        top: 16px;
         z-index: -1;
       }
     }
@@ -64,10 +68,10 @@ export const HomeSectionContainer = styled.div`
       p:last-of-type::before {
         content: "";
         position: absolute;
-        width: 45%;
+        width: 49%;
         height: 20px;
         background-color: white;
-        left: 110px;
+        left: 18.5%;
         bottom: -1px;
         z-index: -1;
       }

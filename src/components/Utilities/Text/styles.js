@@ -69,7 +69,6 @@ export const TextStyled = styled.p`
     }
   }
   &.bigText400 {
-    font-family: "Times";
     font-size: ${props => props.theme.fonts.mediumSizeText};
     font-weight: normal;
     font-style: normal;
@@ -108,7 +107,8 @@ export const TextStyled = styled.p`
     font-weight: lighter;
     font-style: normal;
     line-height: normal;
-    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.largestText};
     }
   }

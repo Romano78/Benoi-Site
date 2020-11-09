@@ -2,9 +2,10 @@ import styled from "@emotion/styled"
 
 export const Section2Container = styled.div`
   width: 100%;
+  padding-top: 80px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    margin-top: 80px;
+    padding-top: 150px;
   }
 `
 
@@ -61,7 +62,7 @@ export const SecondSliderContainer = styled.div`
   margin-top: 50px;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-bottom: 50px;
-    padding-top: 200px;
+    padding-top: 50px;
   }
 `
 
@@ -83,7 +84,6 @@ export const SecondSliderContent = styled.div`
   padding-top: 50px;
   padding-bottom: 100px;
   width: 60%;
-  padding: 20px 20px 20px 20px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 150px;
@@ -101,32 +101,52 @@ export const FirstSliderBodyText = styled.div`
   justify-content: center;
   align-items: center;
 
+  .First__Slide__Content {
+    position: relative;
+    font-size: 20px !important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 3px solid white;
+      width: 63%;
+      height: 27px;
+      left: 36%;
+      bottom: -5px;
+      opacity: 0.9;
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        border: 3px solid white;
+        width: 63%;
+        height: 27px;
+        left: 37%;
+        bottom: -5px;
+        opacity: 0.9;
+      }
+
+      @media (min-width: ${props => props.theme.breakpoints.lg}) {
+        content: "";
+        height: 47px;
+      }
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+      font-size: 35px !important;
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .First__Slide__Content {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        border: 3px solid white;
-        width: 219px;
-        height: 45px;
-        left: 113px;
-        bottom: -5px;
-        opacity: 0.9;
-      }
-    }
   }
 `
 
 export const SecondSliderBodyText = styled.div`
   display: flex;
   justify-content: center;
-
   .Second__Slide__Content {
     p:last-of-type {
       margin-top: 33px;
@@ -139,6 +159,12 @@ export const SecondSliderBodyText = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    p {
+      font-size: 35px !important;
+    }
   }
 `
 

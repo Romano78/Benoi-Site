@@ -75,7 +75,7 @@ export const FirstSliderBodyText = styled.div`
         position: absolute;
         background: white;
         width: 100%;
-        height: 45px;
+        height: 35px;
         left: 0;
         z-index: -1;
         transform: translate(0, 150%);
@@ -90,16 +90,24 @@ export const FirstSliderContent = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   align-items: center;
   position: relative;
 
   .Objectif__Graphic {
     position: absolute;
     right: 0;
-    bottom: 58px;
-    right: 50px;
-    width: 30%;
+    bottom: 10px;
+    right: 9%;
+    width: 150px;
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      right: 100px;
+      width: 30%;
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -107,13 +115,6 @@ export const FirstSliderContent = styled.div`
     position: relative;
     padding-top: 40px;
     padding-bottom: 250px;
-
-    .Objectif__Graphic {
-      position: absolute;
-      right: 0;
-      bottom: 0px;
-      right: 100px;
-    }
   }
 `
 

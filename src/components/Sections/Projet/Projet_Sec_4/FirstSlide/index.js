@@ -12,8 +12,6 @@ import {
 import Fade from "react-reveal/Fade"
 
 const FirstSlideSection4 = ({ query }) => {
-  console.log(query)
-
   return (
     <Fade bottom distance="30px">
       <FirstSlideSec4Container>

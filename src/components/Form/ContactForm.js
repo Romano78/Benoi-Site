@@ -64,7 +64,7 @@ const ContactForm = () => {
         setFormSuccess(true)
         setFormStatus({
           state: true,
-          message: "Sucess",
+          message: "Success",
         })
       } else {
         setFormStatus({
@@ -82,8 +82,6 @@ const ContactForm = () => {
       ...formValue,
       [e.target.name]: e.target.value,
     })
-
-    console.log(e.target.value)
   }
 
   const formOnBlur = e => {
@@ -105,7 +103,7 @@ const ContactForm = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div style={{ width: "75%", margin: "0 auto" }}>
+      <div style={{ width: "73%", margin: "0 auto" }}>
         <ContactFormStyled
           name="contact"
           noValidate
@@ -138,6 +136,7 @@ const ContactForm = () => {
             variant="outlined"
             error={formStatus.error === "email"}
             focused={false}
+            value={formValue.email}
           />
           <TextField
             required
@@ -151,6 +150,7 @@ const ContactForm = () => {
             multiline={true}
             error={formStatus.error === "text"}
             focused={false}
+            value={formValue.text}
           />
           <MessageContainerMain>
             <button type="submit">Send</button>
