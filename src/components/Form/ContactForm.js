@@ -111,7 +111,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
           fullWidth
           label=""
-          action="https://formspree.io/f/maypddvp"
+          action="https://formspree.io/f/moqplaqw"
           method="POST"
         >
           <TextField
