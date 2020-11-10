@@ -15,7 +15,6 @@ export const HeaderContainer = styled.div`
 export const HeaderMenuList = styled.div`
   display: flex;
   justify-content: center;
-  text-transform: capitalize;
 
   .home-link.active {
     position: relative;

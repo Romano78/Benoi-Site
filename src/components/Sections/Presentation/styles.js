@@ -7,10 +7,6 @@ export const HomeSectionContainer = styled.div`
   padding-top: 20px;
   animation: 2s ease-in 0s 1 slideInFromLeft;
 
-  .presentation-first-p {
-    font-weight: bold !important;
-  }
-
   p {
     margin-top: 15px;
   }
@@ -23,6 +19,7 @@ export const HomeSectionContainer = styled.div`
     margin-top: 50px;
     padding-bottom: 50px;
     z-index: 1;
+    font-weight: bold;
 
     &::after {
       content: "";
