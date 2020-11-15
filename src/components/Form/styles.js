@@ -197,3 +197,12 @@ export const SuccessTitle = styled.div`
 export const SuccessText = styled.div`
   margin-top: 25px;
 `
+
+export const FormContainer = styled.div`
+  width: 53%;
+  margin: 0 auto;
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    width: 73%;
+  }
+`

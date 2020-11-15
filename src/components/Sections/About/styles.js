@@ -66,6 +66,7 @@ export const AboutSectionFooter = styled.div`
   display: flex;
   justify-content: center;
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    display: block;
     padding-left: 185px;
   }
 

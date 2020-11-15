@@ -10,6 +10,7 @@ import {
   ContactFormStyled,
   MessageContainerMain,
   MessageContainer,
+  FormContainer,
 } from "./styles"
 
 const ContactForm = () => {
@@ -103,7 +104,7 @@ const ContactForm = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div style={{ width: "73%", margin: "0 auto" }}>
+      <FormContainer>
         <ContactFormStyled
           name="contact"
           noValidate
@@ -162,7 +163,7 @@ const ContactForm = () => {
             </MessageContainer>
           </MessageContainerMain>
         </ContactFormStyled>
-      </div>
+      </FormContainer>
     </ThemeProvider>
   )
 }

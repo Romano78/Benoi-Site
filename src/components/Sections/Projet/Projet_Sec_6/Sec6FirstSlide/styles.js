@@ -57,7 +57,7 @@ export const Sec6FirstLeftTitle = styled.div`
       @media (min-width: ${props => props.theme.breakpoints.lg}) {
         content: "";
         position: absolute;
-        width: 86%;
+        width: 93%;
         background: white;
         height: 40px;
         left: 0;
@@ -81,7 +81,7 @@ export const Sec6FirstLeftTitle = styled.div`
       @media (min-width: ${props => props.theme.breakpoints.lg}) {
         content: "";
         position: absolute;
-        width: 51%;
+        width: 45%;
         background: white;
         height: 40px;
         left: 0;
