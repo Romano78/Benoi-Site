@@ -35,17 +35,13 @@ const Header = () => {
         <HeaderMenuList>
           <AniLink
             direction="right"
-            to="/"
+            to="/presentation"
             activeClassName="active"
             className="home-link"
           >
             {query.menu.data.text_1}
           </AniLink>
-          <AniLink
-            to="/projet"
-            activeClassName="active"
-            className="projet-link"
-          >
+          <AniLink to="/" activeClassName="active" className="projet-link">
             {query.menu.data.text_2}
           </AniLink>
           <AniLink

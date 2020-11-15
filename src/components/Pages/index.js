@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { HomePageContainer } from "./styles"
 import { WidthLimiterContainer } from "../Layout/styles"
 
-import Presentation from "../../components/Sections/Presentation"
-import Projet from "../../components/Sections/Projet"
-import About from "../../components/Sections/About"
+import Projet from "../Sections/Projet"
 
-const IndexLayout = ({
+const ProjetLayout = ({
   data: {
-    homePage: { data: query },
+    data: {
+      projet: { data: query },
+    },
   },
 }) => {
-  const menuLinks = query?.menu?.document?.data
-  const groupLinksPresentation = query?.group_links[0]?.page_link.document?.data
   const groupLinksSectionP1 = query?.group_links[1]?.page_link.document?.data
   const groupLinksSectionP2 = query?.group_links[2]?.page_link.document?.data
   const groupLinksSectionP3 = query?.group_links[3]?.page_link.document?.data
@@ -29,77 +27,36 @@ const IndexLayout = ({
   const groupLinksSectionP13 = query?.group_links[13]?.page_link.document?.data
   const groupLinksSectionP14 = query?.group_links[14]?.page_link.document?.data
   const groupLinksSectionP15 = query?.group_links[15]?.page_link.document?.data
-  const groupLinksSectionP16 = query?.group_links[16]?.page_link.document?.data
-
-  const [menuItems, setMenuItems] = useState([])
-
-  const [currentLink, setCurrentLink] = useState("")
-
-  const onClickHandler = event => {
-    setCurrentLink(event.target.innerText)
-  }
-
-  useEffect(() => {
-    setCurrentLink(menuLinks.text_1)
-    setMenuItems([menuLinks.text_1, menuLinks.text_2, menuLinks.text_3])
-  }, [])
 
   return (
     <WidthLimiterContainer>
       <HomePageContainer>
-        {currentLink === menuItems[0] ? (
-          <Presentation
-            onClick={onClickHandler}
-            query={{
-              menuLinks: menuLinks,
-              groupLinks: groupLinksPresentation,
-            }}
-          />
-        ) : (
-          ""
-        )}
-        {currentLink === menuItems[1] ? (
-          <Projet
-            query={{
-              page2: groupLinksSectionP1,
-              page3: groupLinksSectionP2,
-              page4: groupLinksSectionP3,
-              page5: groupLinksSectionP4,
-              page6: groupLinksSectionP5,
-              page7: groupLinksSectionP6,
-              page8: groupLinksSectionP7,
-              page9: groupLinksSectionP8,
-              page10: groupLinksSectionP9,
-              page11: groupLinksSectionP10,
-              page12: groupLinksSectionP11,
-              page13: groupLinksSectionP12,
-              page14: groupLinksSectionP13,
-              page15: groupLinksSectionP14,
-              page16: groupLinksSectionP15,
-            }}
-          />
-        ) : (
-          ""
-        )}
-
-        {currentLink === menuItems[2] ? (
-          <About
-            query={{
-              page17: groupLinksSectionP16,
-            }}
-          >
-            hello
-          </About>
-        ) : (
-          ""
-        )}
+        <Projet
+          query={{
+            page2: groupLinksSectionP1,
+            page3: groupLinksSectionP2,
+            page4: groupLinksSectionP3,
+            page5: groupLinksSectionP4,
+            page6: groupLinksSectionP5,
+            page7: groupLinksSectionP6,
+            page8: groupLinksSectionP7,
+            page9: groupLinksSectionP8,
+            page10: groupLinksSectionP9,
+            page11: groupLinksSectionP10,
+            page12: groupLinksSectionP11,
+            page13: groupLinksSectionP12,
+            page14: groupLinksSectionP13,
+            page15: groupLinksSectionP14,
+            page16: groupLinksSectionP15,
+          }}
+        />
       </HomePageContainer>
     </WidthLimiterContainer>
   )
 }
 
-IndexLayout.propTypes = {
+ProjetLayout.propTypes = {
   data: PropTypes.object,
 }
 
-export default IndexLayout
+export default ProjetLayout

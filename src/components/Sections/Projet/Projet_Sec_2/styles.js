@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const Section2Container = styled.div`
   width: 100%;
-  padding-top: 80px;
+  padding-top: 20px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 150px;
@@ -22,11 +22,22 @@ export const FirstSlideContainer = styled.div`
       content: "";
       position: absolute;
       width: 100%;
-      top: 25px;
+      top: 17px;
       left: 0;
-      height: 25px;
+      height: 16px;
       background: white;
       z-index: -1;
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 25px;
+        left: 0;
+        height: 25px;
+        background: white;
+        z-index: -1;
+      }
     }
   }
 
@@ -103,7 +114,7 @@ export const FirstSliderBodyText = styled.div`
 
   .First__Slide__Content {
     position: relative;
-    font-size: 20px !important;
+    /* font-size: 14px !important; */
 
     &::after {
       content: "";
@@ -147,6 +158,7 @@ export const FirstSliderBodyText = styled.div`
 export const SecondSliderBodyText = styled.div`
   display: flex;
   justify-content: center;
+  padding-left: 5px;
   .Second__Slide__Content {
     p:last-of-type {
       margin-top: 33px;
@@ -159,6 +171,7 @@ export const SecondSliderBodyText = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
@@ -171,7 +184,7 @@ export const SecondSliderBodyText = styled.div`
 export const FirstSliderImg = styled.div`
   display: flex;
   justify-content: space-evenly;
-  width: 72%;
+  width: 60%;
   img {
     width: 40%;
   }

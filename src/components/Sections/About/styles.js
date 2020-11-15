@@ -15,6 +15,8 @@ export const AboutSectionContainer = styled.div`
 `
 
 export const AboutSectionText = styled.div`
+  display: flex;
+  justify-content: center;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     display: flex;
     justify-content: center;
@@ -22,7 +24,6 @@ export const AboutSectionText = styled.div`
 
     .About__Section__Content {
       p {
-        line-height: 1.6 !important;
         font-size: 30px !important;
         position: relative;
         width: fit-content;
@@ -30,11 +31,23 @@ export const AboutSectionText = styled.div`
 
         @media (min-width: ${props => props.theme.breakpoints.lg}) {
           font-size: 50px !important;
+          line-height: 1.6 !important;
         }
       }
 
       p::after {
         @media (min-width: ${props => props.theme.breakpoints.md}) {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background: white;
+          height: 15px;
+          z-index: -1;
+          left: 0;
+          top: 28px;
+        }
+
+        @media (min-width: ${props => props.theme.breakpoints.lg}) {
           content: "";
           position: absolute;
           width: 100%;
@@ -50,6 +63,8 @@ export const AboutSectionText = styled.div`
 `
 
 export const AboutSectionFooter = styled.div`
+  display: flex;
+  justify-content: center;
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
     padding-left: 185px;
   }

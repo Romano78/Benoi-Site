@@ -42,7 +42,7 @@ export const theme = {
   fonts: {
     heading1: "60px",
     heading2: "70px",
-    heading3: "35px",
+    heading3: "25px",
     heading4: "30px",
     heading5: "24px",
     heading6: "14px",

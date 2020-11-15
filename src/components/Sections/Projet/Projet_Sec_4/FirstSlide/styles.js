@@ -1,7 +1,6 @@
 import styled from "@emotion/styled"
 
 export const FirstSlideSec4Container = styled.div`
-  height: 720px;
   display: flex;
 `
 
@@ -23,9 +22,10 @@ export const SlideSec4LeftContainer = styled.div`
 export const SlideSec4LeftBody = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
-  padding-left: 150px;
+  padding-top: 100px;
+  padding-left: 10px;
   width: 90%;
+  padding-bottom: 100px;
 
   .Principe-Title {
     position: relative;
@@ -36,10 +36,21 @@ export const SlideSec4LeftBody = styled.div`
       content: "";
       width: 100%;
       background: white;
-      height: 40px;
+      height: 11px;
       left: 0;
-      top: 41px;
+      top: 16px;
       z-index: -1;
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: white;
+        height: 40px;
+        left: 0;
+        top: 41px;
+        z-index: -1;
+      }
     }
   }
 
@@ -50,5 +61,19 @@ export const SlideSec4LeftBody = styled.div`
     position: relative;
     width: fit-content;
     border: 3px solid white;
+    font-size: 12px;
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    padding-top: 150px;
+    padding-left: 150px;
   }
 `

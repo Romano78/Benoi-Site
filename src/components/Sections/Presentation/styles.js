@@ -2,10 +2,12 @@ import styled from "@emotion/styled"
 
 export const HomeSectionContainer = styled.div`
   background: ${props => props.theme.colors.beige};
-  padding-right: 20px;
-  padding-left: 40px;
-  padding-top: 20px;
+  padding: 20px 20px 0 20px;
   animation: 2s ease-in 0s 1 slideInFromLeft;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: 20px 20px 0 20px;
+  }
 
   p {
     margin-top: 15px;
@@ -34,7 +36,7 @@ export const HomeSectionContainer = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    padding-right: 40px;
+    padding-right: 116px;
     padding-left: 80px;
     padding-top: 40px;
 
@@ -63,15 +65,33 @@ export const HomeSectionContainer = styled.div`
       position: relative;
       z-index: 1;
       p:last-of-type::before {
-        content: "";
-        position: absolute;
-        width: 49%;
-        height: 20px;
-        background-color: white;
-        left: 18.5%;
-        bottom: -1px;
-        z-index: -1;
+        @media (min-width: ${props => props.theme.breakpoints.md}) {
+          content: "";
+          position: absolute;
+          width: 82%;
+          height: 20px;
+          background-color: white;
+          left: 0.5%;
+          bottom: -1px;
+          z-index: -1;
+        }
+        @media (min-width: ${props => props.theme.breakpoints.lg}) {
+          content: "";
+          position: absolute;
+          width: 49%;
+          height: 20px;
+          background-color: white;
+          left: 18.5%;
+          bottom: -1px;
+          z-index: -1;
+        }
       }
     }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    padding-right: 40px;
+    padding-left: 80px;
+    padding-top: 40px;
   }
 `

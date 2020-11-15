@@ -2,10 +2,10 @@ import styled from "@emotion/styled"
 import Text from "~/components/Utilities/Text"
 
 export const LinkSection3Text = styled(Text)`
-  font-size: 10px !important;
+  font-size: 9px !important;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 13px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     font-size: 20px !important;
@@ -24,6 +24,8 @@ export const SecondSliderContainer = styled.div`
 
 export const SecondSliderHeader = styled.div`
   margin-bottom: 30px;
+  padding-top: 20px;
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 50px;
   }

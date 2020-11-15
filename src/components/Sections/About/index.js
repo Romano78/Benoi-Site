@@ -14,22 +14,34 @@ const About = ({ queryPage17 }) => {
     <WidthLimiterContainer>
       <AboutSectionContainer>
         <AboutSectionText>
-          <Text
-            dangerouslySetInnerHTML={{
-              __html: queryPage17.prismicPage17.data.contenu.html,
-            }}
-            className="About__Section__Content"
-          />
+          {queryPage17?.prismicPage17?.data?.contenu?.html ? (
+            <Text
+              dangerouslySetInnerHTML={{
+                __html: queryPage17.prismicPage17.data.contenu.html,
+              }}
+              className="About__Section__Content"
+            />
+          ) : (
+            ""
+          )}
         </AboutSectionText>
         <AboutSectionFooter>
-          <Text type="body" className="contact-info">
-            {queryPage17.prismicPage17.data.info}
-          </Text>
+          {queryPage17?.prismicPage17?.data?.info ? (
+            <Text type="body" className="contact-info">
+              {queryPage17.prismicPage17.data.info}
+            </Text>
+          ) : (
+            ""
+          )}
         </AboutSectionFooter>
         <ContactForm />
-        <Text type="smallText400" className="copy-right">
-          {queryPage17.prismicPage17.data.copyright}
-        </Text>
+        {queryPage17?.prismicPage17.data.copyright ? (
+          <Text type="smallText400" className="copy-right">
+            {queryPage17.prismicPage17.data.copyright}
+          </Text>
+        ) : (
+          ""
+        )}
       </AboutSectionContainer>
     </WidthLimiterContainer>
   )

@@ -30,7 +30,11 @@ const Sec5SecondSlide = ({ query }) => {
               />
             </Sec5SecondLeftContainerText>
             <Sec5SecondLeftImg>
-              <img src={query.graph.localFile.url} alt="" />
+              <img
+                src={query.graph.localFile.url}
+                alt=""
+                className="graph-section5Slide2"
+              />
             </Sec5SecondLeftImg>
           </Sec5LeftContainer>
           <Sec5RightContainer>

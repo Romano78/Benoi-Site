@@ -3,12 +3,12 @@ import styled from "@emotion/styled"
 export const TextStyled = styled.p`
   &.body {
     font-family: ${props => props.theme.fontFamily.tertiary};
-    font-size: ${props => props.theme.fonts.bodyMobile};
+    font-size: ${props => props.theme.fonts.mediumSizeText};
     font-weight: normal;
     font-style: normal;
     line-height: normal;
 
-    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.body};
       line-height: 1.6;
     }

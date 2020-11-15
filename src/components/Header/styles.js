@@ -25,11 +25,21 @@ export const HeaderMenuList = styled.div`
       content: "";
       position: absolute;
       width: 100%;
-      height: 13px;
+      height: 10px;
       left: 0;
-      top: 18px;
+      top: 10px;
       z-index: -1;
       background: ${props => props.theme.colors.beige};
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 13px;
+        left: 0;
+        top: 18px;
+        z-index: -1;
+        background: ${props => props.theme.colors.beige};
+      }
     }
   }
 
@@ -42,11 +52,22 @@ export const HeaderMenuList = styled.div`
       content: "";
       position: absolute;
       width: 100%;
-      height: 13px;
+      height: 10px;
       left: 0;
-      top: 18px;
+      top: 10px;
       z-index: -1;
       background: ${props => props.theme.colors.secondary};
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 13px;
+        left: 0;
+        top: 18px;
+        z-index: -1;
+        background: ${props => props.theme.colors.secondary};
+      }
     }
   }
 
@@ -59,11 +80,22 @@ export const HeaderMenuList = styled.div`
       content: "";
       position: absolute;
       width: 100%;
-      height: 13px;
+      height: 10px;
       left: 0;
-      top: 18px;
+      top: 10px;
       z-index: -1;
       background: ${props => props.theme.colors.pink};
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 13px;
+        left: 0;
+        top: 18px;
+        z-index: -1;
+        background: ${props => props.theme.colors.pink};
+      }
     }
   }
 
@@ -79,6 +111,9 @@ export const HeaderMenuList = styled.div`
   }
 
   a:not(:last-of-type) {
-    margin-right: 50px;
+    margin-right: 20px;
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      margin-right: 50px;
+    }
   }
 `

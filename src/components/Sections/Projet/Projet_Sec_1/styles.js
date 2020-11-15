@@ -21,14 +21,25 @@ export const ProjetSecContainer = styled.div`
       position: absolute;
       left: 0;
       background: white;
-      height: 17px;
+      height: 15px;
       width: 100%;
-      top: 21px;
+      top: 17px;
       z-index: -1;
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: white;
+        height: 17px;
+        width: 100%;
+        top: 21px;
+        z-index: -1;
+      }
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 162px;
     padding-bottom: 127px;
     width: 100%;

@@ -11,6 +11,7 @@ import {
   FirstSlideContainer,
   Sec5LeftContainerText,
   Sec5RightList,
+  Sec5LeftContainerImg,
 } from "./styles"
 
 const Sec5FirstSlide = ({ query }) => {
@@ -21,7 +22,13 @@ const Sec5FirstSlide = ({ query }) => {
           <Sec5LeftContainerText>
             <Text type="largeText">{query.contenu.text}</Text>
           </Sec5LeftContainerText>
-          <img src={query.graph.localFile.url} alt="" />
+          <Sec5LeftContainerImg className="Sec5LeftContainerImg">
+            <img
+              src={query.graph.localFile.url}
+              alt=""
+              className="graph-section5Slide1"
+            />
+          </Sec5LeftContainerImg>
         </Sec5LeftContainer>
         <Sec5RightContainer>
           <Sec5RightList>

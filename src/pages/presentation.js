@@ -1,11 +1,10 @@
 import React from "react"
+import PresentationLayout from "../components/Pages/presentation"
 import PropTypes from "prop-types"
-import ProjetLayout from "../components/Pages/projet"
 import { graphql } from "gatsby"
-
 export const query = graphql`
   {
-    projet: prismicHomepage {
+    homePage: prismicHomepage {
       data {
         group_links {
           page_link {
@@ -323,11 +322,12 @@ export const query = graphql`
   }
 `
 
-const Projet = ({ data }) => {
-  return <ProjetLayout data={{ data }} />
+const Index = ({ data }) => {
+  return <PresentationLayout data={data} />
 }
 
-Projet.propTypes = {
+Index.propTypes = {
   data: PropTypes.object,
 }
-export default Projet
+
+export default Index

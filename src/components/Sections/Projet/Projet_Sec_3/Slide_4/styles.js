@@ -14,7 +14,7 @@ export const Slider4Section3Header = styled.div`
 export const Slider4Section3Img = styled.div`
   display: flex;
   img {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     padding-top: 50px;
 
@@ -48,6 +48,10 @@ export const Slider4Section3OptionContent = styled.div`
 `
 export const Slider4Section3Icon = styled.div`
   padding-right: 15px;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding-top: 15px;
+  }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
     padding-top: 15px;

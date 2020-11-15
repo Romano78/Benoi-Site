@@ -25,7 +25,7 @@ export const Sec3Slide3BodyContainer = styled.div`
 `
 
 export const Sec3Slide3QuebecImg = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -46,25 +46,40 @@ export const Sec3Slide3QuebecImg = styled.div`
       width: 100%;
       left: 0;
       z-index: -1;
-    }
 
-    @media (min-width: ${props => props.theme.breakpoints.s}) {
-      font-size: 20px;
-
-      &::after {
+      @media (min-width: ${props => props.theme.breakpoints.s}) {
         content: "";
         position: absolute;
         height: 15px;
-        top: 19px;
+        top: 14px;
+        background: #a8deb1;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+      }
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        content: "";
+        position: absolute;
+        height: 12px;
+        top: 18px;
         background: #a8deb1;
         width: 100%;
         left: 0;
         z-index: -1;
       }
     }
+
+    @media (min-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 20px;
+    }
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      left: 32%;
+      left: 25%;
       font-size: 25px;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+      left: 28%;
     }
   }
 
@@ -83,8 +98,8 @@ export const Sec3Slide3QuebecImg = styled.div`
     }
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      top: 70%;
-      left: 47%;
+      top: 74%;
+      left: 49%;
     }
 
     @media (min-width: ${props => props.theme.breakpoints.l}) {
@@ -94,9 +109,9 @@ export const Sec3Slide3QuebecImg = styled.div`
     }
 
     @media (min-width: ${props => props.theme.breakpoints.lg}) {
-      top: 70%;
-      left: 48%;
-      font-size: 36px;
+      top: 67%;
+      left: 47%;
+      font-size: 40px;
     }
   }
 
@@ -104,13 +119,13 @@ export const Sec3Slide3QuebecImg = styled.div`
     width: 60%;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      width: 40%;
+      width: 50%;
     }
   }
 `
 
 export const Sec3Slide3CanadaImg = styled.div`
-  width: 50%;
+  width: 68%;
   position: relative;
 
   .canada-text {
@@ -129,19 +144,34 @@ export const Sec3Slide3CanadaImg = styled.div`
       width: 100%;
       left: 0;
       z-index: -1;
+
+      @media (min-width: ${props => props.theme.breakpoints.s}) {
+        content: "";
+        position: absolute;
+        height: 15px;
+        top: 13px;
+        background: #a8deb1;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 20px;
     }
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      left: 22%;
-      top: 60%;
+      left: 8%;
+      top: 54%;
       font-size: 25px;
 
       &::after {
         content: "";
         position: absolute;
-        height: 20px;
-        top: 19px;
-        background: ${props => props.theme.colors.tertiary};
+        height: 16px;
+        top: 17px;
+        background: #a8deb1;
         width: 100%;
         left: 0;
         z-index: -1;
@@ -150,7 +180,7 @@ export const Sec3Slide3CanadaImg = styled.div`
 
     @media (min-width: ${props => props.theme.breakpoints.l}) {
       left: 5%;
-      top: 53%;
+      top: 56%;
       font-size: 25px;
 
       &::after {
@@ -175,6 +205,10 @@ export const Sec3Slide3CanadaImg = styled.div`
     color: white;
     font-weight: bold;
     font-family: "Roboto";
+    @media (min-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 25px;
+      left: 50%;
+    }
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: 50px;

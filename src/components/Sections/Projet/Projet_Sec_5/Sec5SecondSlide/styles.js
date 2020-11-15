@@ -14,28 +14,44 @@ export const Sec5LeftContainer = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  .graph-section5Slide2 {
+    width: 30%;
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      width: 60%;
+    }
+  }
 `
 
 export const Sec5SecondLeftImg = styled.div`
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
   img {
     width: 100%;
   }
 `
 export const Sec5SecondLeftContainerText = styled.div`
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
     width: 100%;
-    padding-left: 170px;
-    padding-right: 50px;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
   }
 `
 
 export const Sec5RightContainer = styled.div`
-  width: 50%;
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+  padding-left: 10px;
+  margin-top: 20px;
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 
   .list-container {
     h3 {
@@ -49,15 +65,14 @@ export const Sec5RightContainer = styled.div`
 `
 
 export const FirstSlideContainer = styled.div`
-  display: flex !important;
-  height: 100%;
-  height: 720px;
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    display: flex !important;
+  }
 `
 
 export const SecondSlideContainer = styled.div`
   display: flex !important;
   height: 100%;
-  height: 720px;
 `
 export const Sec5LefttList = styled.div`
   margin-bottom: 10px;

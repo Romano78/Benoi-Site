@@ -44,13 +44,13 @@ export const Slider5Sec3LeftContainer = styled.div`
   align-items: center;
   padding-top: 20px;
   h2 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 12px;
     border: 1px solid ${props => props.theme.colors.tertiary};
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       margin-bottom: 50px;
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 
@@ -60,14 +60,11 @@ export const Slider5Sec3LeftContainer = styled.div`
 `
 
 export const LeftContainerBody = styled.div`
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  padding-left: 56px;
-  padding-right: 40px;
+  justify-content: center;
   h3 {
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     width: fit-content;
     z-index: 1;
@@ -77,15 +74,30 @@ export const LeftContainerBody = styled.div`
         content: "";
         position: absolute;
         width: 100%;
-        background: ${props => props.theme.colors.tertiary};
+        background: #a8deb1;
         left: 0;
-        top: 25px;
-        height: 20px;
+        top: 18px;
+        height: 14px;
+        z-index: -1;
+      }
+      @media (min-width: ${props => props.theme.breakpoints.lg}) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background: #a8deb1;
+        left: 0;
+        top: 22px;
+        height: 18px;
         z-index: -1;
       }
     }
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 25px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: 32px;
     }
   }
@@ -94,24 +106,32 @@ export const LeftContainerBody = styled.div`
     font-size: 14px;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 35px;
+    }
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: 60px;
     }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    padding-left: 127px;
-    padding-right: 63px;
+    width: 100%;
+    margin-left: 50px;
   }
 `
 
 export const CityQuebecContainer = styled.div`
-  width: 50%;
+  width: 30%;
+  margin-right: 65px;
   h3 {
     font-size: 12px;
-    margin-bottom: 20px;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 25px;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: 32px;
+      margin-right: 70px;
     }
   }
 
@@ -119,17 +139,29 @@ export const CityQuebecContainer = styled.div`
     font-size: 14px;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
+      font-size: 35px;
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
       font-size: 60px;
     }
   }
 
   svg {
     width: 40%;
+    height: 4px;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       width: 100%;
+      height: 32px;
     }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    margin-right: 70px;
   }
 `
 
-export const CityCanadaContainer = styled.div``
+export const CityCanadaContainer = styled.div`
+  white-space: nowrap;
+`

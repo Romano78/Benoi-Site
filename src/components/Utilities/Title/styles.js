@@ -8,7 +8,7 @@ export const TitleStyled = styled.p`
     font-style: normal;
     line-height: 1.3;
     font-family: "Roboto";
-    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
       font-size: ${props => props.theme.fonts.heading1};
     }
   }
