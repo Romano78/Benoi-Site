@@ -3,7 +3,9 @@ const path = require("path")
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-// const prismicHtmlSerializer = require("./src/gatsby/htmlSerializer")
+
+const prismicHtmlSerializer = require("./src/gatsby/htmlSerializer")
+const prismicLinkResolver = require("./src/gatsby/linkResolver")
 
 module.exports = {
   /* Your site config here */
@@ -41,7 +43,11 @@ module.exports = {
         shouldDownloadImage: () => true,
 
         // PrismJS highlighting for labels and slices
-        // htmlSerializer: () => prismicHtmlSerializer,
+        // Get the correct URLs in blog posts
+        linkResolver: () => prismicLinkResolver,
+        // PrismJS highlighting for labels and slices
+        htmlSerializer: () => prismicHtmlSerializer,
+
         schemas: {
           homepage: require("./src/schemas/homepage.json"),
           menu: require("./src/schemas/menu.json"),

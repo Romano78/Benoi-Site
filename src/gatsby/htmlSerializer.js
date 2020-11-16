@@ -14,8 +14,6 @@ require("prismjs/components/prism-graphql")
 
 const { Elements } = RichText
 
-console.log(Elements)
-
 // Labels with this name will be inline code
 const codeInline = ["text"]
 // Labels with these names will become code blocks
@@ -32,44 +30,39 @@ const codeBlock = [
 ]
 
 const htmlSerializer = (type, element, content) => {
-  switch (type) {
-    // First differentiate between a label and a preformatted field (e.g. the Code Block slice)
-    case Elements.label: {
-      // Use the inline code for labels that are in the array of "codeInlne"
-      if (codeInline.includes(element.data.label)) {
-        return `<code class="language-${element.data.label}">${content}</code>`
-      }
-      // Use the blockquote for labels with the name "quote"
-      if (element.data.label === "quote") {
-        return `<blockquote><p>${content}</p></blockquote>`
-      }
-      // Use the code block for labels that are in the array of "codeBlock"
-      // Choose the right PrismJS highlighting with the label name
-      if (codeBlock.includes(element.data.label)) {
-        return `<pre class="language-${
-          element.data.label
-        }"><code class="language-${element.data.label}">${Prism.highlight(
-          content,
-          Prism.languages[element.label]
-        )}</code></pre>`
-      }
-      return null
-    }
-    case Elements.preformatted: {
-      if (codeBlock.includes(element.label)) {
-        return `<pre class="language-${element.label}"><code class="language-${
-          element.label
-        }">${Prism.highlight(
-          element.text,
-          Prism.languages[element.label]
-        )}</code></pre>`
-      }
-      return null
-    }
-    default: {
-      return null
-    }
-  }
+  // switch (type) {
+  //   // First differentiate between a label and a preformatted field (e.g. the Code Block slice)
+  //   case Elements.label: {
+  //     // Use the inline code for labels that are in the array of "codeInline"
+  //     if (codeInline.includes(element.data.label)) {
+  //       return `<code class="language-${element.data.label}">${content}</code>`
+  //     }
+  //     // Use the blockquote for labels with the name "quote"
+  //     if (element.data.label === 'quote') {
+  //       return `<blockquote><p>${content}</p></blockquote>`
+  //     }
+  //     // Use the code block for labels that are in the array of "codeBlock"
+  //     // Choose the right PrismJS highlighting with the label name
+  //     if (codeBlock.includes(element.data.label)) {
+  //       return `<pre class="language-${element.data.label}"><code class="language-${
+  //         element.data.label
+  //       }">${Prism.highlight(content, Prism.languages[element.label])}</code></pre>`
+  //     }
+  //     return null
+  //   }
+  //   case Elements.preformatted: {
+  //     if (codeBlock.includes(element.label)) {
+  //       return `<pre class="language-${element.label}"><code class="language-${element.label}">${Prism.highlight(
+  //         element.text,
+  //         Prism.languages[element.label]
+  //       )}</code></pre>`
+  //     }
+  //     return null
+  //   }
+  //   default: {
+  //     return null
+  //   }
+  // }
 }
 
 module.exports = htmlSerializer
