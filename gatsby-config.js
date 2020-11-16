@@ -3,6 +3,7 @@ const path = require("path")
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+// const prismicHtmlSerializer = require("./src/gatsby/htmlSerializer")
 
 module.exports = {
   /* Your site config here */

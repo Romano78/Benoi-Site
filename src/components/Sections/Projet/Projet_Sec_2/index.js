@@ -23,7 +23,6 @@ const ProjetSection2 = ({
   return (
     <Fade bottom distance="30px">
       <Section2Container id="section-2">
-        {/* <a href="#section-3">SS</a> */}
         <FirstSlideContainer>
           <FirstSliderContent>
             <Title as="h2" type="heading2">
