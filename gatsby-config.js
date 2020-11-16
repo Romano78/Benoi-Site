@@ -4,8 +4,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-console.log(`${__dirname}/src/pages`)
-
 module.exports = {
   /* Your site config here */
   plugins: [

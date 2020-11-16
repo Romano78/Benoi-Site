@@ -19,7 +19,7 @@ const Sec6FirstSlide = ({ query }) => {
       <Sec6FirstSlideContainer>
         <Sec6FirstLeftSlide>
           <Sec6FirstLeftTitle>
-            <Title type="heading2" as="h2">
+            <Title type="heading2" as="h2" className="Sec6FirstSlide--Title">
               {query.information}
             </Title>
           </Sec6FirstLeftTitle>
