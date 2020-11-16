@@ -20,7 +20,7 @@ export const Slider5Sec3RightContainer = styled.div`
     font-weight: normal !important;
   }
 
-  .text {
+  .Slider5___Sec3Text {
     display: flex;
     justify-content: center;
   }

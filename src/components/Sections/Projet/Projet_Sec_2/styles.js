@@ -9,7 +9,7 @@ export const Section2Container = styled.div`
   }
 `
 
-export const FirstSlideContainer = styled.div`
+export const Sec2FirstSlideContainer = styled.div`
   display: flex !important;
   h2 {
     width: fit-content;
@@ -68,7 +68,7 @@ export const FirstSlideContainer = styled.div`
   }
 `
 
-export const SecondSliderContainer = styled.div`
+export const Sec2SecondSliderContainer = styled.div`
   display: flex !important;
   margin-top: 50px;
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -77,7 +77,7 @@ export const SecondSliderContainer = styled.div`
   }
 `
 
-export const FirstSliderContent = styled.div`
+export const Sec2FirstSliderContent = styled.div`
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: ${props => props.theme.colors.secondary};
@@ -90,7 +90,7 @@ export const FirstSliderContent = styled.div`
   }
 `
 
-export const SecondSliderContent = styled.div`
+export const Sec2SecondSliderContent = styled.div`
   background-color: ${props => props.theme.colors.secondary};
   padding-top: 50px;
   padding-bottom: 100px;
@@ -107,7 +107,7 @@ export const SecondSliderContent = styled.div`
   }
 `
 
-export const FirstSliderBodyText = styled.div`
+export const Sec2FirstSliderBodyText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +155,7 @@ export const FirstSliderBodyText = styled.div`
   }
 `
 
-export const SecondSliderBodyText = styled.div`
+export const Sec2SecondSliderBodyText = styled.div`
   display: flex;
   justify-content: center;
   padding-left: 5px;
@@ -181,7 +181,7 @@ export const SecondSliderBodyText = styled.div`
   }
 `
 
-export const FirstSliderImg = styled.div`
+export const Sec2FirstSliderImg = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 60%;
@@ -198,7 +198,7 @@ export const FirstSliderImg = styled.div`
     }
   }
 `
-export const SecondSliderImg = styled.div`
+export const SecSecondSliderImg = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;

@@ -16,11 +16,11 @@ const ProjetSection3 = ({
 }) => {
   return (
     <Section3Container>
-      <Slider1 querySection3={querySection3} />
-      <Slider2 querySection3P2={querySection3P2} />
-      <Slider3 querySection3P3={querySection3P3} />
-      <Slider4 querySection3P4={querySection3P4} />
-      <Slider5 querySection3P5={querySection3P5} />
+      {querySection3 ? <Slider1 querySection3={querySection3} /> : ""}
+      {querySection3P2 ? <Slider2 querySection3P2={querySection3P2} /> : ""}
+      {querySection3P3 ? <Slider3 querySection3P3={querySection3P3} /> : ""}
+      {querySection3P4 ? <Slider4 querySection3P4={querySection3P4} /> : ""}
+      {querySection3P5 ? <Slider5 querySection3P5={querySection3P5} /> : ""}
     </Section3Container>
   )
 }

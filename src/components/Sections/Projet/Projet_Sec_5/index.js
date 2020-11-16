@@ -10,8 +10,8 @@ const ProjetSection5 = ({
 }) => {
   return (
     <Sec5Container>
-      <Sec5FirstSlide query={querySection5P1} />
-      <Sec5SecondSlide query={querySection5P2} />
+      {querySection5P1 ? <Sec5FirstSlide query={querySection5P1} /> : ""}
+      {querySection5P2 ? <Sec5SecondSlide query={querySection5P2} /> : ""}
     </Sec5Container>
   )
 }

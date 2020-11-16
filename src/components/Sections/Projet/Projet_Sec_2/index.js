@@ -6,14 +6,14 @@ import Fade from "react-reveal/Fade"
 
 import {
   Section2Container,
-  FirstSlideContainer,
-  SecondSliderContainer,
-  FirstSliderContent,
-  FirstSliderBodyText,
-  FirstSliderImg,
-  SecondSliderImg,
-  SecondSliderContent,
-  SecondSliderBodyText,
+  Sec2FirstSlideContainer,
+  Sec2SecondSliderContainer,
+  Sec2FirstSliderContent,
+  Sec2FirstSliderBodyText,
+  Sec2FirstSliderImg,
+  SecSecondSliderImg,
+  Sec2SecondSliderContent,
+  Sec2SecondSliderBodyText,
 } from "./styles"
 
 const ProjetSection2 = ({
@@ -23,12 +23,12 @@ const ProjetSection2 = ({
   return (
     <Fade bottom distance="30px">
       <Section2Container id="section-2">
-        <FirstSlideContainer>
-          <FirstSliderContent>
+        <Sec2FirstSlideContainer>
+          <Sec2FirstSliderContent>
             <Title as="h2" type="heading2">
               {querySection2.titre.text}
             </Title>
-            <FirstSliderBodyText>
+            <Sec2FirstSliderBodyText>
               <Text
                 dangerouslySetInnerHTML={{
                   __html: querySection2.contenu.html,
@@ -36,18 +36,18 @@ const ProjetSection2 = ({
                 className="First__Slide__Content"
                 type="body"
               />
-            </FirstSliderBodyText>
-          </FirstSliderContent>
-          <FirstSliderImg>
+            </Sec2FirstSliderBodyText>
+          </Sec2FirstSliderContent>
+          <Sec2FirstSliderImg>
             <img
               src={querySection2.graphic.localFile.url}
               alt="objectif graphic"
             />
-          </FirstSliderImg>
-        </FirstSlideContainer>
-        <SecondSliderContainer id="section-3">
+          </Sec2FirstSliderImg>
+        </Sec2FirstSlideContainer>
+        <Sec2SecondSliderContainer id="section-3">
           {querySection2P2?.graphs?.length > 0 ? (
-            <SecondSliderImg>
+            <SecSecondSliderImg>
               {querySection2P2.graphs.map((img, index) => {
                 return (
                   <img
@@ -58,12 +58,12 @@ const ProjetSection2 = ({
                   />
                 )
               })}
-            </SecondSliderImg>
+            </SecSecondSliderImg>
           ) : (
             ""
           )}
-          <SecondSliderContent>
-            <SecondSliderBodyText>
+          <Sec2SecondSliderContent>
+            <Sec2SecondSliderBodyText>
               <Text
                 dangerouslySetInnerHTML={{
                   __html: querySection2P2.contenu.html,
@@ -71,9 +71,9 @@ const ProjetSection2 = ({
                 className="Second__Slide__Content"
                 type="body"
               />
-            </SecondSliderBodyText>
-          </SecondSliderContent>
-        </SecondSliderContainer>
+            </Sec2SecondSliderBodyText>
+          </Sec2SecondSliderContent>
+        </Sec2SecondSliderContainer>
       </Section2Container>
     </Fade>
   )

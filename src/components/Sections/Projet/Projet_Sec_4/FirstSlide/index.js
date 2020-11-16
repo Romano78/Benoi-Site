@@ -17,23 +17,39 @@ const FirstSlideSection4 = ({ query }) => {
       <FirstSlideSec4Container>
         <SlideSec4LeftContainer>
           <SlideSec4LeftBody>
-            <Title as="h2" type="heading2" className="Principe-Title">
-              {query.titre.text}
-            </Title>
-            <Title as="h3" type="heading3" className="Principe-SubTitle">
-              {query.phrase}
-            </Title>
-            <Text
-              dangerouslySetInnerHTML={{
-                __html: query.content.html,
-              }}
-              type="bigText400"
-            />
+            {query?.titre?.text ? (
+              <Title as="h2" type="heading2" className="Principe-Title">
+                {query.titre.text}
+              </Title>
+            ) : (
+              ""
+            )}
+            {query?.phrase ? (
+              <Title as="h3" type="heading3" className="Principe-SubTitle">
+                {query.phrase}
+              </Title>
+            ) : (
+              ""
+            )}
+            {query?.content?.html ? (
+              <Text
+                dangerouslySetInnerHTML={{
+                  __html: query.content.html,
+                }}
+                type="bigText400"
+              />
+            ) : (
+              ""
+            )}
           </SlideSec4LeftBody>
         </SlideSec4LeftContainer>
-        <SlideSec4RightContainer>
-          <img src={query.graphic.localFile.url} alt="" />
-        </SlideSec4RightContainer>
+        {query?.graphic?.localFile?.url ? (
+          <SlideSec4RightContainer>
+            <img src={query.graphic.localFile.url} alt="" />
+          </SlideSec4RightContainer>
+        ) : (
+          ""
+        )}
       </FirstSlideSec4Container>
     </Fade>
   )

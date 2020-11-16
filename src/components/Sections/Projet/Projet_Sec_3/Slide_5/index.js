@@ -19,11 +19,10 @@ const Slider5 = ({ querySection3P5 }) => {
     <Fade bottom distance="30px">
       <Slider5Sec3Container>
         <Slider5Sec3RightContainer>
-          <div className="text">
+          <div className="Slider5___Sec3Text">
             <Text
               dangerouslySetInnerHTML={{ __html: querySection3P5.contenu.html }}
               type="bigText400"
-              className=""
             />
           </div>
           <Slider5Sec3RightImg>

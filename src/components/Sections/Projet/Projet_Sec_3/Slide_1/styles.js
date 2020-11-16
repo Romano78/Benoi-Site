@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 
-export const FirstSlideContainer = styled.div`
+export const Sec3Slide1FirstSlideContainer = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     h2 {
       width: fit-content;
@@ -28,7 +28,7 @@ export const FirstSlideContainer = styled.div`
   }
 `
 
-export const FirstSliderBodyText = styled.div`
+export const Sec3Slide1FirstSliderBodyText = styled.div`
   .Sec3-First__Slide__Content {
     position: relative;
     width: fit-content;
@@ -84,7 +84,7 @@ export const FirstSliderBodyText = styled.div`
   }
 `
 
-export const FirstSliderContent = styled.div`
+export const Sec3Slide1FirstSliderContent = styled.div`
   background-color: ${props => props.theme.colors.tertiary};
   width: 100%;
   display: flex;
