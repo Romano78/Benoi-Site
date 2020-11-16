@@ -132,7 +132,8 @@ export const Sec3Slide3QuebecImg = styled.div`
 export const Sec3Slide3CanadaImg = styled.div`
   width: 68%;
   position: relative;
-
+  display: flex;
+  justify-content: center;
   .canada-text {
     position: absolute;
     left: 12%;

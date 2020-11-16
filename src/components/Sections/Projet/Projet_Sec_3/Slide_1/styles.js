@@ -46,7 +46,7 @@ export const Sec3Slide1FirstSliderBodyText = styled.div`
       position: absolute;
       background: white;
       width: 95%;
-      height: 21px;
+      height: 10px;
       left: 0;
       z-index: -1;
       transform: translate(0, 110%);
