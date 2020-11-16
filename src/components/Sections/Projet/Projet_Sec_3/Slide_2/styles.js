@@ -26,6 +26,14 @@ export const SecondSliderHeader = styled.div`
   margin-bottom: 30px;
   padding-top: 20px;
 
+  .Sec3-Second__Slide__Content {
+    p {
+      @media (min-width: ${props => props.theme.breakpoints.l}) {
+        font-size: 35px;
+      }
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 50px;
   }

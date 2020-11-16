@@ -36,6 +36,9 @@ export const Sec3Slide1FirstSliderBodyText = styled.div`
 
     p {
       line-height: 1.6;
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        font-size: 60px;
+      }
     }
 
     p:after {

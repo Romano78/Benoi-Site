@@ -117,6 +117,12 @@ export const Sec6SecondRightText = styled.div`
 
   .Sec6-Second-Right-Container {
     line-height: normal !important;
+    p {
+      line-height: 1.6;
+      @media (min-width: ${props => props.theme.breakpoints.l}) {
+        font-size: 25px;
+      }
+    }
   }
 
   svg {

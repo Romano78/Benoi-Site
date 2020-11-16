@@ -36,6 +36,14 @@ export const Sec5SecondLeftContainerText = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 40px;
+
+  .Sec5SecondLeft__Text {
+    p {
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        font-size: 35px;
+      }
+    }
+  }
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
     width: 100%;
     display: flex;

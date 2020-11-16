@@ -23,6 +23,12 @@ export const Slider5Sec3RightContainer = styled.div`
   .Slider5___Sec3Text {
     display: flex;
     justify-content: center;
+
+    p {
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        font-size: 35px;
+      }
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {

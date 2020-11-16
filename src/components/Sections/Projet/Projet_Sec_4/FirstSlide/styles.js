@@ -27,6 +27,14 @@ export const SlideSec4LeftBody = styled.div`
   width: 90%;
   padding-bottom: 100px;
 
+  .Sec4FirstSlide__Text {
+    p {
+      @media (min-width: ${props => props.theme.breakpoints.l}) {
+        font-size: 35px;
+      }
+    }
+  }
+
   .Principe-Title {
     position: relative;
     width: fit-content;

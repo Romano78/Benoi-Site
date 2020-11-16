@@ -28,6 +28,7 @@ const Sec5SecondSlide = ({ query }) => {
                     __html: query.contenu.html,
                   }}
                   type="largeText"
+                  className="Sec5SecondLeft__Text"
                 />
               ) : (
                 ""

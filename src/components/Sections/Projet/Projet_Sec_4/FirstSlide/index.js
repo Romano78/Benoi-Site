@@ -37,6 +37,7 @@ const FirstSlideSection4 = ({ query }) => {
                   __html: query.content.html,
                 }}
                 type="bigText400"
+                className="Sec4FirstSlide__Text"
               />
             ) : (
               ""

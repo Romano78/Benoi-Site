@@ -10,6 +10,11 @@ export const Sec3Slide3Container = styled.div`
   }
 
   .Sec3__Slide3-Titre {
+    p {
+      @media (min-width: ${props => props.theme.breakpoints.l}) {
+        font-size: 35px;
+      }
+    }
   }
 `
 
@@ -109,8 +114,8 @@ export const Sec3Slide3QuebecImg = styled.div`
     }
 
     @media (min-width: ${props => props.theme.breakpoints.lg}) {
-      top: 67%;
-      left: 47%;
+      top: 72%;
+      left: 48%;
       font-size: 40px;
     }
   }

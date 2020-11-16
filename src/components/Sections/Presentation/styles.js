@@ -35,6 +35,9 @@ export const HomeSectionContainer = styled.div`
     }
   }
 
+  .presentation-contenu {
+    font-size: 12px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-right: 116px;
     padding-left: 80px;
@@ -64,8 +67,14 @@ export const HomeSectionContainer = styled.div`
     .presentation-contenu {
       position: relative;
       z-index: 1;
+
+      p {
+        line-height: 1.6;
+        font-size: 22px;
+      }
+
       p:last-of-type::before {
-        @media (min-width: ${props => props.theme.breakpoints.md}) {
+        @media (min-width: ${props => props.theme.breakpoints.lg}) {
           content: "";
           position: absolute;
           width: 82%;

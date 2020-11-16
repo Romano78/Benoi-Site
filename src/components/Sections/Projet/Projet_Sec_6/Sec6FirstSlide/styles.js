@@ -101,6 +101,14 @@ export const Sec6FirstRightText = styled.div`
   margin-top: 20px;
   margin-left: 20px;
 
+  .Sec6-First__Slide__Content {
+    p {
+      line-height: 1.6;
+      @media (min-width: ${props => props.theme.breakpoints.l}) {
+        font-size: 25px;
+      }
+    }
+  }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     margin-top: 50px;
     margin-left: 50px;
