@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Text from "../../../../Utilities/Text"
+// import Text from "../../../../Utilities/Text"
 import Icon from "~/components/Icon"
 import Fade from "react-reveal/Fade"
 
@@ -20,7 +20,7 @@ const Slider5 = ({ querySection3P5 }) => {
       <Slider5Sec3Container>
         <Slider5Sec3RightContainer>
           <div className="Slider5___Sec3Text">
-            <Text
+            <div
               dangerouslySetInnerHTML={{ __html: querySection3P5.contenu.html }}
               type="bigText400"
             />

@@ -23,7 +23,7 @@ const Sec5SecondSlide = ({ query }) => {
           <Sec5LeftContainer>
             <Sec5SecondLeftContainerText>
               {query?.contenu.html ? (
-                <Text
+                <div
                   dangerouslySetInnerHTML={{
                     __html: query.contenu.html,
                   }}

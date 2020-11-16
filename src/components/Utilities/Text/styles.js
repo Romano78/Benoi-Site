@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 
-export const TextStyled = styled.p`
+export const TextStyled = styled.div`
   &.body {
     font-family: ${props => props.theme.fontFamily.tertiary};
     font-size: ${props => props.theme.fonts.mediumSizeText};

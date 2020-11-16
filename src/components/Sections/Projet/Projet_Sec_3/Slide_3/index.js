@@ -9,7 +9,7 @@ import {
   Sec3Slide3CanadaImg,
   Sec3Slide3Header,
 } from "./styles"
-import Text from "../../../../Utilities/Text"
+// import Text from "../../../../Utilities/Text"
 
 const Slider3 = ({ querySection3P3 }) => {
   return (
@@ -17,7 +17,7 @@ const Slider3 = ({ querySection3P3 }) => {
       <Sec3Slide3Container>
         <Sec3Slide3Header>
           {querySection3P3?.text?.html ? (
-            <Text
+            <div
               dangerouslySetInnerHTML={{ __html: querySection3P3.text.html }}
               type="bigText400"
               className="Sec3__Slide3-Titre"

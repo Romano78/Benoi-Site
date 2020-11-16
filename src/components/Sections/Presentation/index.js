@@ -11,7 +11,7 @@ const Presentation = ({ query: { groupLinks } }) => {
         <Text type="smallText500" className="presentation-first-p">
           {groupLinks.titre.text}
         </Text>
-        <Text
+        <div
           dangerouslySetInnerHTML={{ __html: groupLinks.text.html }}
           className="presentation-contenu"
           type="smallText500"

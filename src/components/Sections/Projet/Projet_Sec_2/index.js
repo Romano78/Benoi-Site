@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Title from "../../../Utilities/Title"
-import Text from "../../../Utilities/Text"
+// import Text from "../../../Utilities/Text"
 import Fade from "react-reveal/Fade"
 
 import {
@@ -29,7 +29,7 @@ const ProjetSection2 = ({
               {querySection2.titre.text}
             </Title>
             <Sec2FirstSliderBodyText>
-              <Text
+              <div
                 dangerouslySetInnerHTML={{
                   __html: querySection2.contenu.html,
                 }}
@@ -64,7 +64,7 @@ const ProjetSection2 = ({
           )}
           <Sec2SecondSliderContent>
             <Sec2SecondSliderBodyText>
-              <Text
+              <div
                 dangerouslySetInnerHTML={{
                   __html: querySection2P2.contenu.html,
                 }}

@@ -22,7 +22,7 @@ const Slider2 = ({ querySection3P2 }) => {
         <SectionSliderBody>
           <SecondSliderHeader>
             {querySection3P2?.text?.html ? (
-              <Text
+              <div
                 dangerouslySetInnerHTML={{ __html: querySection3P2.text.html }}
                 className="Sec3-Second__Slide__Content"
                 type="bigText400"

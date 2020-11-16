@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Title from "../../../../Utilities/Title"
-import Text from "../../../../Utilities/Text"
+// import Text from "../../../../Utilities/Text"
 import {
   FirstSlideSec4Container,
   SlideSec4LeftContainer,
@@ -32,7 +32,7 @@ const FirstSlideSection4 = ({ query }) => {
               ""
             )}
             {query?.content?.html ? (
-              <Text
+              <div
                 dangerouslySetInnerHTML={{
                   __html: query.content.html,
                 }}

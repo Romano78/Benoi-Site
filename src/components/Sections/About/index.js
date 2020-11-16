@@ -15,7 +15,7 @@ const About = ({ queryPage17 }) => {
       <AboutSectionContainer>
         <AboutSectionText>
           {queryPage17?.prismicPage17?.data?.contenu?.html ? (
-            <Text
+            <div
               dangerouslySetInnerHTML={{
                 __html: queryPage17.prismicPage17.data.contenu.html,
               }}

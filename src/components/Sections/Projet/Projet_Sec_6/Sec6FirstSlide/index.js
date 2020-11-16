@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Text from "~/components/Utilities/Text"
+// import Text from "~/components/Utilities/Text"
 import Title from "~/components/Utilities/Title"
 import Icon from "~/components/Icon"
 import Fade from "react-reveal/Fade"
@@ -33,7 +33,7 @@ const Sec6FirstSlide = ({ query }) => {
             return (
               <Sec6FirstRightText key={index}>
                 <Icon type="option" />
-                <Text
+                <div
                   dangerouslySetInnerHTML={{ __html: info.choix.html }}
                   className="Sec6-First__Slide__Content"
                   type="body"

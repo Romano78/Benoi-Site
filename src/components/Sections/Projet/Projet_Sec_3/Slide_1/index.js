@@ -6,7 +6,7 @@ import {
   Sec3Slide1FirstSliderBodyText,
 } from "./styles"
 
-import Text from "../../../../Utilities/Text"
+// import Text from "../../../../Utilities/Text"
 import Fade from "react-reveal/Fade"
 
 const Slider1 = ({ querySection3 }) => {
@@ -16,7 +16,7 @@ const Slider1 = ({ querySection3 }) => {
         <Sec3Slide1FirstSliderContent>
           <Sec3Slide1FirstSliderBodyText>
             {querySection3?.contenu?.html ? (
-              <Text
+              <div
                 dangerouslySetInnerHTML={{ __html: querySection3.contenu.html }}
                 className="Sec3-First__Slide__Content"
                 type="bigText"
