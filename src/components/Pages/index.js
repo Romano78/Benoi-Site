@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { HomePageContainer } from "./styles"
 import { WidthLimiterContainer } from "../Layout/styles"
+import SEO from "../seo"
 
 import Projet from "../Sections/Projet"
 
@@ -28,30 +29,49 @@ const ProjetLayout = ({
   const groupLinksSectionP14 = query?.group_links[14]?.page_link.document?.data
   const groupLinksSectionP15 = query?.group_links[15]?.page_link.document?.data
 
+  const seoTitle = query.seo_title.text
+  const seoDescription = query.seo_description
+  const seoKeyWords = query.seo_keywords
+
   return (
-    <WidthLimiterContainer>
-      <HomePageContainer>
-        <Projet
-          query={{
-            page2: groupLinksSectionP1,
-            page3: groupLinksSectionP2,
-            page4: groupLinksSectionP3,
-            page5: groupLinksSectionP4,
-            page6: groupLinksSectionP5,
-            page7: groupLinksSectionP6,
-            page8: groupLinksSectionP7,
-            page9: groupLinksSectionP8,
-            page10: groupLinksSectionP9,
-            page11: groupLinksSectionP10,
-            page12: groupLinksSectionP11,
-            page13: groupLinksSectionP12,
-            page14: groupLinksSectionP13,
-            page15: groupLinksSectionP14,
-            page16: groupLinksSectionP15,
-          }}
-        />
-      </HomePageContainer>
-    </WidthLimiterContainer>
+    <>
+      <SEO
+        title={seoTitle ? seoTitle : "Home"}
+        description={
+          seoDescription
+            ? seoDescription
+            : "Shop online for haircare, skincare, and makeup. Enjoy free shipping Australia-wide when you spend $50. Order now and pay later with Afterpay and Zip Pay."
+        }
+        keywords={
+          seoKeyWords
+            ? seoKeyWords.split(",")
+            : ["Projet", "Philantropie", "Aventure Philantropique"]
+        }
+      />
+      <WidthLimiterContainer>
+        <HomePageContainer>
+          <Projet
+            query={{
+              page2: groupLinksSectionP1,
+              page3: groupLinksSectionP2,
+              page4: groupLinksSectionP3,
+              page5: groupLinksSectionP4,
+              page6: groupLinksSectionP5,
+              page7: groupLinksSectionP6,
+              page8: groupLinksSectionP7,
+              page9: groupLinksSectionP8,
+              page10: groupLinksSectionP9,
+              page11: groupLinksSectionP10,
+              page12: groupLinksSectionP11,
+              page13: groupLinksSectionP12,
+              page14: groupLinksSectionP13,
+              page15: groupLinksSectionP14,
+              page16: groupLinksSectionP15,
+            }}
+          />
+        </HomePageContainer>
+      </WidthLimiterContainer>
+    </>
   )
 }
 

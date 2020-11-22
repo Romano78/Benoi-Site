@@ -7,6 +7,11 @@ export const query = graphql`
   {
     projet: prismicHomepage {
       data {
+        seo_keywords
+        seo_description
+        seo_title {
+          text
+        }
         group_links {
           page_link {
             document {

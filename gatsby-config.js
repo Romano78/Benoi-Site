@@ -9,6 +9,12 @@ const prismicLinkResolver = require("./src/gatsby/linkResolver")
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Donner Son Travail | Une aventure philanthropique `,
+    description: `Bienvenue dans mon aventure philanthropique qui est partie d’une réflexion sur mon engagement dans ma société et qui s’est transformée en l’idée que je vous expose dans ce site.`,
+    author: `@romain`,
+    siteUrl: `https://donnersontravail.com/presentation`,
+  },
   plugins: [
     "gatsby-plugin-material-ui",
     "gatsby-plugin-emotion",
