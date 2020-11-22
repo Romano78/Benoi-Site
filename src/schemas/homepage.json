@@ -38,6 +38,28 @@
         },
         "label": "group links"
       }
+    },
+    "seo_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "SEO Title",
+        "placeholder": "SEO Title"
+      }
+    },
+    "seo_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Description",
+        "placeholder": "SEO Text"
+      }
+    },
+    "seo_keywords": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Keywords",
+        "placeholder": "SEO Keywords"
+      }
     }
   }
 }
